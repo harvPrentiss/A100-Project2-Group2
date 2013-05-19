@@ -5,8 +5,9 @@
 
 #navigation
 {
-	background: black;  /* Sets background of the menu */
+	background: #111;  /* Sets background of the menu */
 	font-size: 28px;   /* Sets font size of the menu headings */
+	font-family: sans-serif;
 	
 	/* Everything below this point is positional formatting */
 	padding: 0;
@@ -36,7 +37,7 @@
 
 #navigation > li > a
 {
-	color: white;
+	color: #828282;
 	font-weight: bold;
 }
 
@@ -74,7 +75,7 @@
 #navigation ul li a
 {
 	width: auto;
-	color: white;
+	color: #828282;
 }
 
 #navigation li ul li a

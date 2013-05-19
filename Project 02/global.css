@@ -1,21 +1,23 @@
 body
 {
-	background:black;
-	color: white;
+	background:#111;
+	color: #bbb;
+	font-family: sans-serif;
 }
 
 #header
 {
 	width: 100%;
-    margin: 10px auto 50px auto;
+    margin: 10px auto 80px auto;
 }
 
 #contentContainer
 {
-	width: 100%;
-	margin: 10px auto 10px auto;
+	width: 80%;
+	margin: 90px auto 10px auto;
 	font-size: 16pt;
 	font-weight: bold;
+	padding: 5px;
 }
 
 #leftContent
@@ -44,12 +46,12 @@ body
 
 textarea
 {
-	min-width: 40%;
-	max-width: 40%;
+	min-width: 60%;
+	max-width: 60%;
 	min-height: 75px;
 	max-height: 100px;
-	background: black;
-	color: white;
+	background: #111;
+	color: #bbb;
 	border: 2px solid #333;
 	font-size: 12pt;
 	margin-bottom: 5px;
@@ -66,8 +68,8 @@ img.banner
 
 select
 {
-	background: black;
-	color: white;
+	background: #111;
+	color: #bbb;
 	border: 2px solid #333;
 	font-size: 14pt;
 	margin-bottom: 5px;
@@ -75,21 +77,21 @@ select
 
 input
 {
-	background: black;
-	color: white;
+	background: #111;
+	color: #bbb;
 	border: 2px solid #333; 
 	margin-bottom: 5px;
 }
 
 input[type=submit]
 {
-	color: white;
+	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 2px solid #222;
+ 	border: 3px solid #222;
  	margin: 0;
  	padding: 0;
- 	background: #000; 
+ 	background: #111; 
 }
 
 input[type=submit]:hover
@@ -99,19 +101,19 @@ input[type=submit]:hover
 
 input[type=submit]:active
 {
-	border: 2px solid #000; 
+	border: 2px solid #111; 
 	font-size: 12pt;
 }
 
 input[type=reset]
 {
-	color: white;
+	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 2px solid #222;
+ 	border: 3px solid #222;
  	margin: 0;
  	padding: 0;
- 	background: #000; 
+ 	background: #111; 
 }
 
 input[type=reset]:hover

@@ -36,20 +36,18 @@
                         <form action="insert.php" method="post">
                                 <br>
                                 Please fill out and submit the form below to post your job on our board.<br><br><br>
-                                First Name (Optional): <br>
-                                <input type="text" name="firstName">
+                        <div id="leftContent">
+                                
+                                Name (Optional): <input type="text" name="name">   
                                 <br>
-                                Last Name (Optional): <br>
-                                <input type="text" name="lastName">
                                 <br>
-                                Company Name: <br>
-                                <input type="text" name="companyName">
+                                Company Name: <input type="text" name="companyName">
                                 <br>
-                                Email Address: <br>
-                                <input type="text" name="emailAddress">
                                 <br>
-                                Position Title: <br>
-                                <input type="text" name="positionTitle">
+                                Email Address: <input type="text" name="emailAddress">
+                                <br>
+                                <br>
+                                Position Title:<input type="text" name="positionTitle">
                                 <br>
                                 <br>
                                 Location: <select name="state">
@@ -63,6 +61,7 @@
                                                 <option value='8'>Other</option>
                                         </select>
                                 <br>
+                                <br>
                                 Work Remotely: <select name='remoteWorking'>
                                                         <option value='1'>Yes</option>
                                                         <option value='2'>No</option>
@@ -73,6 +72,9 @@
                                 Responsibilities<br>
                                 <textarea name="responsibilities" rows="10" col="75"></textarea>
                                 <br>
+                        </div>
+                        <div id="rightContent">
+                                
                                 Desired Skills<br>
                                 <textarea name="skills" rows="10" col="75"></textarea>
                                 <br>
@@ -84,6 +86,8 @@
                                 <br>
                                 <input type="reset" name="reset" value="Reset Form">
                                 <input type="submit" name="submit" value="Submit">
+                        </div>
+                                
                         </form>
                 </div>  
         </body>

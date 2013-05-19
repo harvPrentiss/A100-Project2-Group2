@@ -1,6 +1,6 @@
 body
 {
-	background:#111;
+	background:#202020;
 	color: #bbb;
 	font-family: sans-serif;
 }
@@ -8,7 +8,8 @@ body
 #header
 {
 	width: 100%;
-    margin: 10px auto 80px auto;
+	background: #101010;
+    margin: 5px 20px 10px auto;
 }
 
 #contentContainer
@@ -58,12 +59,9 @@ textarea
 }
 
 img.banner
-{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
+{	
+	float: left;
+	margin: 0px 20px 10px 0px;
 }
 
 select

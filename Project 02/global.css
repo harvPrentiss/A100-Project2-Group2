@@ -18,7 +18,7 @@ body
 	margin: 90px auto 10px auto;
 	font-size: 16pt;
 	font-weight: bold;
-	padding: 5px;
+	padding: 10px;
 }
 
 #leftContent
@@ -58,6 +58,16 @@ textarea
 	margin-bottom: 5px;
 }
 
+textarea:focus
+{
+	background: #000000;
+}
+
+textarea:hover
+{
+	background: #000000;
+}
+
 img.banner
 {	
 	float: left;
@@ -67,6 +77,7 @@ img.banner
 img.banner:hover
 {
 	background: #111111;
+	transition: background 0.5s ease-in-out;
 }
 
 select
@@ -78,6 +89,17 @@ select
 	margin-bottom: 5px;
 }
 
+select:focus
+{
+	background: #000000;
+}
+
+select:hover
+{
+	background: #000000;
+}
+
+
 input
 {
 	background: #111;
@@ -85,6 +107,16 @@ input
 	border: 2px solid #1437AD; 
 	margin-bottom: 5px;
 	font-size: 14pt;
+}
+
+input:focus
+{
+	background: #000000;
+}
+
+input:hover
+{
+	background: #000000;
 }
 
 input[type=submit]
@@ -100,7 +132,8 @@ input[type=submit]
 
 input[type=submit]:hover
 {
-	background: #333; 
+	background: #000000;
+	transition: background 0.75s ease-in-out; 
 }
 
 input[type=submit]:active
@@ -122,7 +155,8 @@ input[type=reset]
 
 input[type=reset]:hover
 {
-	background: #333; 
+	background: #000000; 
+	transition: background 0.75s ease-in-out;
 }
 
 input[type=reset]:active

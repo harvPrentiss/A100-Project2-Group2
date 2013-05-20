@@ -42,6 +42,7 @@
 #navigation > li:hover > a
 {
 	background: #0b1d5d;
+	transition: background 0.45s ease-in-out;
 }
 
 #navigation li a
@@ -90,5 +91,6 @@
 #navigation ul li:hover a
 {
 	background: #0b1d5d;
+	transition: background 0.35s ease-in-out;
 }
 

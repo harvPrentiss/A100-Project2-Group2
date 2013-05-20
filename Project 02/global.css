@@ -53,7 +53,7 @@ textarea
 	max-height: 100px;
 	background: #111;
 	color: #bbb;
-	border: 2px solid #333;
+	border: 2px solid #1437AD;
 	font-size: 12pt;
 	margin-bottom: 5px;
 }
@@ -64,11 +64,16 @@ img.banner
 	margin: 0px 20px 10px 0px;
 }
 
+img.banner:hover
+{
+	background: #111111;
+}
+
 select
 {
 	background: #111;
 	color: #bbb;
-	border: 2px solid #333;
+	border: 2px solid #1437AD;
 	font-size: 14pt;
 	margin-bottom: 5px;
 }
@@ -77,8 +82,9 @@ input
 {
 	background: #111;
 	color: #bbb;
-	border: 2px solid #333; 
+	border: 2px solid #1437AD; 
 	margin-bottom: 5px;
+	font-size: 14pt;
 }
 
 input[type=submit]
@@ -86,7 +92,7 @@ input[type=submit]
 	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #222;
+ 	border: 3px solid #1437AD;
  	margin: 0;
  	padding: 0;
  	background: #111; 
@@ -108,7 +114,7 @@ input[type=reset]
 	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #222;
+ 	border: 3px solid #1437AD;
  	margin: 0;
  	padding: 0;
  	background: #111; 

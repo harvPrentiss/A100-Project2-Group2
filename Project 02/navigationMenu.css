@@ -25,7 +25,7 @@
 		
     /* Everything below this point is positional formatting */
     list-style:none;
-    margin:0;
+    margin:0px 0px 0px 5px;
     padding:0;
     position:relative;
     display:block;
@@ -41,7 +41,7 @@
 
 #navigation > li:hover > a
 {
-	background: #111111;
+	background: #0b1d5d;
 }
 
 #navigation li a
@@ -89,6 +89,6 @@
 
 #navigation ul li:hover a
 {
-	background: #202020;
+	background: #0b1d5d;
 }
 

@@ -35,13 +35,13 @@
 
 #navigation > li > a
 {
-	color: #727272;
+	color: #bbb;
 	font-weight: bold;
 }
 
 #navigation > li:hover > a
 {
-	background: #0b1d5d;
+	background: #1437AD;
 	transition: background 0.45s ease-in-out;
 }
 
@@ -74,7 +74,7 @@
 #navigation ul li a
 {
 	width: auto;
-	color: #828282;
+	color: #bbb;
 }
 
 #navigation li ul li a
@@ -90,7 +90,7 @@
 
 #navigation ul li:hover a
 {
-	background: #0b1d5d;
+	background: #1437AD;
 	transition: background 0.35s ease-in-out;
 }
 

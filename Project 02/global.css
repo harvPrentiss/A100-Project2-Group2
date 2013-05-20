@@ -106,7 +106,8 @@ input
 	color: #bbb;
 	border: 2px solid #1437AD; 
 	margin-bottom: 5px;
-	font-size: 14pt;
+	font-size: 12pt;
+	padding: 5px 15px 5px 2px;
 }
 
 input:focus
@@ -169,4 +170,32 @@ h1
 {
 	text-align: center;
 	font-size: 14pt;
+}
+
+p
+{
+	font-size: 12pt;
+}
+
+::-webkit-input-placeholder {
+   color: #777;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #777;  
+   font-style: italic;
+   font-size: 8pt;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #777; 
+   font-style: italic;
+   font-size: 8pt; 
+}
+
+:-ms-input-placeholder {  
+   color: #777; 
+   font-style: italic; 
+   font-size: 8pt;
 }

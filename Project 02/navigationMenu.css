@@ -43,6 +43,9 @@
 {
 	background: #1437AD;
 	transition: background 0.45s ease-in-out;
+	-webkit- transition: background 0.45s ease-in-out;
+	-moz- transition: background 0.45s ease-in-out;
+	-o- transition: background 0.45s ease-in-out;
 }
 
 #navigation li a
@@ -92,5 +95,8 @@
 {
 	background: #1437AD;
 	transition: background 0.35s ease-in-out;
+	-webkit- transition: background 0.35s ease-in-out;
+	-moz- transition: background 0.35s ease-in-out;
+	-o- transition: background 0.35s ease-in-out;
 }
 

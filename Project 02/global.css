@@ -1,7 +1,7 @@
 body
 {
 	background:#202020;
-	color: #bbb;
+	color: #ddd;
 	font-family: sans-serif;
 }
 
@@ -78,6 +78,9 @@ img.banner:hover
 {
 	background: #111111;
 	transition: background 0.5s ease-in-out;
+	-webkit- transition: background 0.5s ease-in-out;
+	-moz- transition: background 0.5s ease-in-out;
+	-o- transition: background 0.5s ease-in-out;
 }
 
 select
@@ -134,7 +137,10 @@ input[type=submit]
 input[type=submit]:hover
 {
 	background: #000000;
-	transition: background 0.75s ease-in-out; 
+	transition: background 0.75s ease-in-out;
+	-webkit- transition: background 0.75s ease-in-out;
+	-moz- transition: background 0.75s ease-in-out;
+	-o- transition: background 0.75s ease-in-out; 
 }
 
 input[type=submit]:active
@@ -158,6 +164,9 @@ input[type=reset]:hover
 {
 	background: #000000; 
 	transition: background 0.75s ease-in-out;
+	-webkit- transition: background 0.75s ease-in-out;
+	-moz- transition: background 0.75s ease-in-out;
+	-o- transition: background 0.75s ease-in-out;
 }
 
 input[type=reset]:active

@@ -1,6 +1,6 @@
 body
 {
-	background:#202020;
+	background:#191970;
 	color: #ddd;
 	font-family: sans-serif;
 }
@@ -51,9 +51,11 @@ textarea
 	max-width: 60%;
 	min-height: 75px;
 	max-height: 100px;
-	background: #111;
+	background: #222;
 	color: #bbb;
-	border: 2px solid #1437AD;
+	border: 2px solid #7A7A7A;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
 	font-size: 12pt;
 	margin-bottom: 5px;
 }
@@ -87,7 +89,9 @@ select
 {
 	background: #111;
 	color: #bbb;
-	border: 2px solid #1437AD;
+	border: 2px solid #7A7A7A;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
 	font-size: 14pt;
 	margin-bottom: 5px;
 }
@@ -105,9 +109,11 @@ select:hover
 
 input
 {
-	background: #111;
+	background: #222;
 	color: #bbb;
-	border: 2px solid #1437AD; 
+	border: 2px solid #7A7A7A; 
+	border-radius: 10px;
+	-moz- border-radius: 10px;
 	margin-bottom: 5px;
 	font-size: 12pt;
 	padding: 5px 15px 5px 2px;
@@ -128,10 +134,12 @@ input[type=submit]
 	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #1437AD;
+ 	border: 3px solid #7A7A7A;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
  	margin: 0;
  	padding: 0;
- 	background: #111; 
+ 	background: #202020; 
 }
 
 input[type=submit]:hover
@@ -154,10 +162,12 @@ input[type=reset]
 	color: #bbb;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #1437AD;
+ 	border: 3px solid #7A7A7A;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
  	margin: 0;
  	padding: 0;
- 	background: #111; 
+ 	background: #202020; 
 }
 
 input[type=reset]:hover

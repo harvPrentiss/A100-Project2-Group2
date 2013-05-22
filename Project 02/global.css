@@ -45,18 +45,18 @@ a.title:hover
 #header
 {
 	width: 100%;
-	border-bottom: 5px solid red;
+	border-bottom: 3px solid red;
     margin: 5px 20px 10px auto;
 }
 
 #mainContainer
 {
-	width: 90%;
+	width: 100%;
 }
 
 #contentContainer
 {
-	width: 75%;
+	width: 100%;
 	margin: 10px auto;
 	font-size: 16pt;
 	font-weight: bold;
@@ -66,9 +66,9 @@ a.title:hover
 
 #leftContent
 {
-	width: 35%;
+	width: 60%;
 	float: left;
-	margin: 5px;
+	margin: 2px;
 	text-align: left;
 }
 
@@ -76,16 +76,40 @@ a.title:hover
 {
 	width: 35%;
 	float: right;
-	margin: 5px;
+	margin: 2px 2px 2px 0px;
 	text-align: left;
 }
 
-#adContainer
+#newsBox
 {
-	width: 10%;
+	width: 90%;
 	margin: 5px auto;
-	float:right;
-	border-left: 2px solid #222222;
+	overflow:hidden;
+	border: 1px solid black;
+	padding-left: 5px;
+}
+
+#mapBox
+{
+	width: 90%;
+	margin: 5px auto;
+	overflow:hidden;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+img.mapBox
+{
+	height: 100%;
+	width: 100%;
+}
+
+#adBox
+{
+	width: 90%;
+	margin: 5px auto;
+	overflow:hidden;
+	border: 1px solid black;
 	padding-left: 5px;
 }
 
@@ -98,7 +122,7 @@ a.title:hover
 
 #footerLeft
 {
-	width: 40%;
+	width: 45%;
 	float: left;
 	margin: 5px auto;
 	text-align: left;
@@ -106,10 +130,69 @@ a.title:hover
 
 #footerRight
 {
-	width: 40%;
+	width: 45%;
 	float: right;
 	margin: 5px auto;
 	text-align: right;
+}
+
+.profileTile
+{
+	width:140px;
+	height:140px;
+	float:left;
+	margin:4px;
+	border: 1px solid black;
+	
+	/* Giving the sponsor div a relative positioning: */
+	position:relative;
+	cursor:pointer;
+}
+
+.profileFlip
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	border:1px solid #ddd;	
+}
+
+.profileFlip:hover
+{
+	border:1px solid #999;
+
+    /* CSS3 inset shadow: */
+    -moz-box-shadow:0 0 30px #999 inset;
+    -webkit-box-shadow:0 0 30px #999 inset;
+    box-shadow:0 0 30px #999 inset;
+}
+
+.profileFlip img{
+    /* Centering the logo image in the middle of the .profileFlip div */
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-70px 0 0 -70px;
+}
+
+.profileData{
+    /* Hiding the .profileData div */
+    display:none;
+}
+
+.profileDescription{
+    font-size:11px;
+    padding:50px 10px 20px 20px;
+    font-style:italic;
+}
+
+.profileURL{
+    font-size:10px;
+    font-weight:bold;
+    padding-left:20px;
 }
 
 textarea
@@ -256,16 +339,16 @@ input.join
 {
 	color: #000000;
  	min-width: 135px;
- 	height: 40px;
+ 	height: 35px;
  	border: 3px solid #000000;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
- 	margin: auto 0;
+ 	margin: auto 5px auto 0px;
  	padding: 5px;
  	background: #F87531; 
  	float: right;
  	font-family: whiteBoardFont;
- 	font-size: 14pt;
+ 	font-size: 12pt;
 }
 
 input.join:hover

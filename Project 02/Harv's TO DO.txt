@@ -4,3 +4,8 @@ TO DO:
 - sign in functionality
 - decide on job poster functionality
 - make main pages for Job Seeker and Job Poster
+
+
+Community Resources
+- Search
+- 

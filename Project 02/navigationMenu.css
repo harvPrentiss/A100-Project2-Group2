@@ -3,11 +3,18 @@
  - drop down for more links
 */
 
+
+@font-face
+{
+	font-family: whiteBoardFont;
+	src: url(WhiteBoard.ttf);
+}
+
 #navigation
 {
 	background: transparent;  /* Sets background of the menu */
 	font-size: 28px;   /* Sets font size of the menu headings */
-	font-family: sans-serif;
+	font-family: whiteBoardFont;
 	
 	/* Everything below this point is positional formatting */
 	padding: 0;
@@ -16,32 +23,34 @@
 	text-align:center;
 	padding: 0;
 	list-style: none;
-	vertical-align: middle;
+	display:inline;
 }
 		
 #navigation > li
 {
-	/*border: 1px solid #333;*/  /* Puts a border around the main headers of the menu  */
+	/*border: 1px solid #AAAAAA;*/  /* Puts a border around the main headers of the menu  */
 		
     /* Everything below this point is positional formatting */
     list-style:none;
     margin:0px 0px 0px 5px;
     padding:0;
     position:relative;
-    display:block;
+    display: block;
     float:left;
-    background: #111111;
+    background: transparent;
 }
 
 #navigation > li > a
 {
-	color: #bbb;
+	color: #397D02;
 	font-weight: bold;
 }
 
 #navigation > li:hover > a
 {
-	background: #1437AD;
+	background: #AAAAAA;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
 	transition: background 0.45s ease-in-out;
 	-webkit- transition: background 0.45s ease-in-out;
 	-moz- transition: background 0.45s ease-in-out;
@@ -64,20 +73,17 @@
 	position: absolute;
 	display: none;
 	z-index: 999;
-	background: #111111;
-	border-style: solid;
-	border-color: #111111;
-	border-top-width: 0px;
-	border-bottom-width: 2px;
-	border-left-width: 2px;
-	border-right-width: 2px;
+	background: #AAAAAA;
+	border: 2px solid #AAAAAA;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
 	color:white;
 }
 
 #navigation ul li a
 {
 	width: auto;
-	color: #bbb;
+	color: #397D02;
 }
 
 #navigation li ul li a
@@ -93,7 +99,9 @@
 
 #navigation ul li:hover a
 {
-	background: #1437AD;
+	background: #888888;
+	border: 1px solid #888888;
+	border-radius: 10px;
 	transition: background 0.35s ease-in-out;
 	-webkit- transition: background 0.35s ease-in-out;
 	-moz- transition: background 0.35s ease-in-out;

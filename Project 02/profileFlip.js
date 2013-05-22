@@ -25,7 +25,7 @@ $(document).ready(function(){
 
             elem.flip({
                 direction:'lr',
-                speed: 350,
+                speed: 250,
                 onBefore: function(){
                     // Insert the contents of the .profileData div (hidden
                     // from view with display:none) into the clicked
@@ -40,31 +40,37 @@ $(document).ready(function(){
         }
     });
 
-    $(".profileFlip").hoverIntent(flipOver, flipBack);
+    $(".profileFlip").hoverIntent({
+        over:flipOver,
+        interval: 200,
+        out: flipBack });
 });
 
     
 function flipOver(){
-    elem.flip({
-                direction:'lr',
-                speed: 350,
-                onBefore: function(){
-                    // Insert the contents of the .profileData div (hidden
-                    // from view with display:none) into the clicked
-                    // .profileFlip div before the flipping animation starts:
+    var elem = $(this);
+    if(!elem.data('flipped'))
+    {
+        elem.flip({
+                    direction:'lr',
+                    speed: 350,
+                    onBefore: function(){
+                        // Insert the contents of the .profileData div (hidden
+                        // from view with display:none) into the clicked
+                        // .profileFlip div before the flipping animation starts:
 
-                    elem.html(elem.siblings('.profileData').html());
-                }
-            });
-
-            // Setting the flag:
-            elem.data('flipped',true);
+                        elem.html(elem.siblings('.profileData').html());
+                    }
+                });
+        elem.data('flipped', true);
+    }
 }
 
 function flipBack(){
-    elem.revertFlip();
-
-            // Unsetting the flag:
-            elem.data('flipped',false)
-
+    var elem = $(this);
+    if(elem.data('flipped'))
+    {
+        elem.revertFlip();
+    }
 }
+

@@ -21,7 +21,7 @@
 
 .profileFlip:hover
 {
-	border:1px solid #999;
+	border:0px solid #999;
 
     /* CSS3 inset shadow: */
     -moz-box-shadow:0 0 30px #999 inset;
@@ -47,7 +47,7 @@
 {
     font-size:12px;
     padding:2px 2px 2px 5px;
-    font-style:italic;
+    font-style: normal;
 }
 
 .profileDescription a
@@ -57,6 +57,8 @@
     font-size: 11pt;
     text-align: center;
     display:block;
+	font-style: normal;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .profileDescription a:visited

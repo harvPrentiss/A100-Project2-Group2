@@ -1,0 +1,79 @@
+/* This is all the css for the profileTiles on the main page */
+.profileTile
+{
+	width:140px;
+	height:140px;
+	float:left;
+	margin:4px;
+	
+	/* Giving the sponsor div a relative positioning: */
+	position:relative;
+}
+
+.profileFlip
+{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;	
+}
+
+.profileFlip:hover
+{
+	border:1px solid #999;
+
+    /* CSS3 inset shadow: */
+    -moz-box-shadow:0 0 30px #999 inset;
+    -webkit-box-shadow:0 0 30px #999 inset;
+    box-shadow:0 0 30px #999 inset;
+}
+
+.profileFlip img
+{
+    /* Centering the logo image in the middle of the .profileFlip div */
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-70px 0 0 -70px;
+    height:100%;
+    width: 100%;
+}
+
+.profileData
+{
+    /* Hiding the .profileData div */
+    display:none;
+}
+
+.profileDescription
+{
+    font-size:10px;
+    padding:2px 2px 2px 2px;
+    font-style:italic;
+}
+
+.profileDescription h1
+{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.profileURL
+{
+    font-size:11px;
+    font-weight:bold;
+    padding-left:20px;
+    color: #236B8E;
+}
+
+.profileURL a
+{
+    color: #236B8E;
+}
+
+.profileURL a:visited
+{
+    color: #236B8E;
+}

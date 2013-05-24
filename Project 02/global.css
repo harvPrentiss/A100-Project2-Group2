@@ -1,14 +1,14 @@
 body
 {
-	background:#DDDDDD;
+	background:#CCCCCC;
 	color: #222222;
 	font-family: sans-serif;
 }
 
 @font-face
 {
-	font-family: whiteBoardFont;
-	src: url(WhiteBoard.ttf);
+	font-family: guildFont;
+	src: url(exHeavy.ttf);
 }
 
 .clear
@@ -22,31 +22,50 @@ a.title
 {
 	display: block;
 	float: left;
-	font-family: whiteBoardFont;
+	font-family: guildFont;
 	font-size: 28pt;
 	text-decoration: none;
-	color: #4682B4;
-	padding: 2px;
+	color: #236B8E;
+	padding: 1px;
+	margin-right: 20px;
 }
 
 a.title:visited
 {
-	color: #0276FD;
+	color: #236B8E;
 }
 
 a.title:hover
 {
 	background: #AAAAAA;
 	border: 1px solid #AAAAAA;
-	border-radius: 10px;
+	border-radius: 5px;
 	-moz- border-radius: 10px;
+}
+
+.search
+{
+	font-family: sans-serif;
+	font-size: 12pt;
+	vertical-align: bottom;
+	height: 15px;
+	float: right;
 }
 
 #header
 {
 	width: 100%;
-	border-bottom: 3px solid red;
+	border-bottom: 3px solid #236B8E;
     margin: 5px 20px 10px auto;
+    font-family: guildFont;
+    color: #4682B4;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#header input
+{
+	font-size: 10pt;
 }
 
 #mainContainer
@@ -56,7 +75,7 @@ a.title:hover
 
 #contentContainer
 {
-	width: 100%;
+	width: 95%;
 	margin: 10px auto;
 	font-size: 16pt;
 	font-weight: bold;
@@ -66,7 +85,7 @@ a.title:hover
 
 #leftContent
 {
-	width: 60%;
+	width: 50%;
 	float: left;
 	margin: 2px;
 	text-align: left;
@@ -74,7 +93,7 @@ a.title:hover
 
 #rightContent
 {
-	width: 35%;
+	width: 45%;
 	float: right;
 	margin: 2px 2px 2px 0px;
 	text-align: left;
@@ -117,7 +136,7 @@ img.mapBox
 {
 	width: 100%;
 	margin: 10px 0px;
-	border-top: 3px solid red;
+	border-top: 3px solid #236B8E;
 }
 
 #footerLeft
@@ -136,62 +155,16 @@ img.mapBox
 	text-align: right;
 }
 
-.profileTile
+h1
 {
-	width:140px;
-	height:140px;
-	float:left;
-	margin:4px;
-	border: 1px solid black;
-	
-	/* Giving the sponsor div a relative positioning: */
-	position:relative;
+	text-align: center;
+	font-size: 18pt;
+	font-family: guildFont;
 }
 
-.profileFlip
+p
 {
-	position:absolute;
-	left:0;
-	top:0;
-	width:100%;
-	height:100%;
-	border:1px solid #ddd;	
-}
-
-.profileFlip:hover
-{
-	border:1px solid #999;
-
-    /* CSS3 inset shadow: */
-    -moz-box-shadow:0 0 30px #999 inset;
-    -webkit-box-shadow:0 0 30px #999 inset;
-    box-shadow:0 0 30px #999 inset;
-}
-
-.profileFlip img{
-    /* Centering the logo image in the middle of the .profileFlip div */
-
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin:-70px 0 0 -70px;
-}
-
-.profileData{
-    /* Hiding the .profileData div */
-    display:none;
-}
-
-.profileDescription{
-    font-size:11px;
-    padding:50px 10px 20px 20px;
-    font-style:italic;
-}
-
-.profileURL{
-    font-size:10px;
-    font-weight:bold;
-    padding-left:20px;
+	font-size: 12pt;
 }
 
 textarea
@@ -268,15 +241,7 @@ input
 	padding: 5px 15px 5px 2px;
 }
 
-input:focus
-{
-	background: #CCCCCC;
-}
 
-input:hover
-{
-	background: #CCCCCC;
-}
 
 input[type=submit]
 {
@@ -334,34 +299,31 @@ input[type=reset]:active
 	font-size: 12pt;
 }
 
-input.join
+a.join
 {
+	display:block;
 	color: #000000;
- 	min-width: 135px;
- 	height: 35px;
  	border: 3px solid #000000;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
  	margin: auto 5px auto 0px;
  	padding: 5px;
- 	background: #F87531; 
- 	float: right;
- 	font-family: whiteBoardFont;
+ 	background: #236B8E; 
+ 	float: left;
+ 	font-family: guildFont;
  	font-size: 12pt;
+ 	text-decoration: none;
+ 	vertical-align: bottom;
 }
 
-input.join:hover
+a.join:hover
 {
 	color: #FFFFFF;
-	transition: background 0.75s ease-in-out;
-	-webkit- transition: background 0.75s ease-in-out;
-	-moz- transition: background 0.75s ease-in-out;
-	-o- transition: background 0.75s ease-in-out; 
 }
 
-input.join:active
+a.join:active
 {
-	border: 2px solid #FFFFFF;
+	border: 2px solid #444444;
 }
 
 input.joinRegular
@@ -372,7 +334,7 @@ input.joinRegular
  	border: 3px solid #000000;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
- 	margin: auto 0;
+ 	margin: 1px 0;
  	padding: 5px;
  	background: #F87531;
  	font-size: 14pt;
@@ -381,10 +343,6 @@ input.joinRegular
 input.joinRegular:hover
 {
 	color: #FFFFFF;
-	transition: background 0.75s ease-in-out;
-	-webkit- transition: background 0.75s ease-in-out;
-	-moz- transition: background 0.75s ease-in-out;
-	-o- transition: background 0.75s ease-in-out; 
 }
 
 input.joinRegular:active
@@ -392,15 +350,31 @@ input.joinRegular:active
 	border: 2px solid #FFFFFF;
 }
 
-h1
+input.searchBtn
 {
-	text-align: center;
-	font-size: 14pt;
+	color: #236B8E;
+ 	min-width: 100px;
+ 	height: 30px;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: auto 0;
+ 	padding: 5px;
+ 	background: transparent;
+ 	font-size: 14pt;
+ 	font-family: guildFont;
+ 	vertical-align: bottom;
+ 	float: right;
 }
 
-p
+input.searchBtn:hover
 {
-	font-size: 12pt;
+	color: #000000;
+}
+
+input.searchBtn:active
+{
+	border: 2px solid #000000;
 }
 
 ::-webkit-input-placeholder {
@@ -408,13 +382,13 @@ p
    font-style: italic;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-input-placeholder { /* Firefox 18- */
    color: #333333;  
    font-style: italic;
    font-size: 8pt;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+::-moz-input-placeholder {  /* Firefox 19+ */
    color: #333333; 
    font-style: italic;
    font-size: 8pt; 
@@ -425,3 +399,4 @@ p
    font-style: italic; 
    font-size: 8pt;
 }
+

@@ -19,7 +19,7 @@ $(document).ready(function(){
             // Unsetting the flag:
             elem.data('flipped',false)
         }
-        else
+        else if(!elem.data('flipped'))
         {
             // Using the flip method defined by the plugin:
 
@@ -42,8 +42,9 @@ $(document).ready(function(){
 
     $(".profileFlip").hoverIntent({
         over:flipOver,
-        interval: 200,
-        out: flipBack });
+        interval: 600,
+        out: flipBack, 
+        timeout: 100});
 });
 
     

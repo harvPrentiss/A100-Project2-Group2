@@ -1,14 +1,13 @@
 body
 {
-	background:#CCCCCC;
+	background:#ffffff;
 	color: #222222;
 	font-family: sans-serif;
 }
 
 @font-face
 {
-	font-family: guildFont;
-	src: url(exHeavy.ttf);
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .clear
@@ -22,10 +21,10 @@ a.title
 {
 	display: block;
 	float: left;
-	font-family: guildFont;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 28pt;
 	text-decoration: none;
-	color: #236B8E;
+	color: #339933;
 	padding: 1px;
 	margin: auto 10px auto 0px;
 }
@@ -59,8 +58,8 @@ a.title:hover
 	width: 100%;
 	border-bottom: 3px solid #236B8E;
     margin: 5px 20px 10px auto;
-    font-family: guildFont;
-    color: #4682B4;
+    font-family: 'Fjalla One', sans-serif;
+    color: #000000;
     font-size: 20pt;
     text-align: center;
 }
@@ -103,7 +102,7 @@ a.title:hover
 .boxTitle
 {
 	height: auto;
-	border-bottom: 1px solid black;
+	border-bottom: 0px solid black;
 }
 
 #newsBox
@@ -111,10 +110,10 @@ a.title:hover
 	width: 95%;
 	margin: 2px auto;
 	overflow:hidden;
-	border: 1px solid black;
+	border: 0px solid black;
 	border-radius: 5px;
 	-moz- border-radius: 2px;
-	background: #C4C4C4;
+	background: #ffffff;
 }
 
 #newsBox img
@@ -129,11 +128,11 @@ a.title:hover
 	width: 95%;
 	margin: 2px auto;
 	overflow:hidden;
-	border: 1px solid black;
+	border: 0px solid black;
 	border-radius: 5px;
 	-moz- border-radius: 5px;
 	padding: 5px 0px;
-	background: #C4C4C4;
+	background: #ffffff;
 }
 
 #mapBox img
@@ -147,10 +146,10 @@ a.title:hover
 	width: 95%;
 	margin: 2px auto;
 	overflow:hidden;
-	border: 1px solid black;
+	border: 0px solid black;
 	border-radius: 5px;
 	-moz- border-radius: 5px;
-	background: #C4C4C4;
+	background: #ffffff;
 }
 
 #adBox img
@@ -186,7 +185,7 @@ h1
 {
 	text-align: center;
 	font-size: 18pt;
-	font-family: guildFont;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 p
@@ -200,9 +199,9 @@ textarea
 	max-width: 60%;
 	min-height: 75px;
 	max-height: 100px;
-	background: #BBBBBB;
+	background: #ffffff;
 	color: #333333;
-	border: 2px solid #5C5C5C;
+	border: 0px solid #5C5C5C;
 	border-radius: 10px;
 	-moz- border-radius: 10px;
 	font-size: 12pt;
@@ -211,19 +210,19 @@ textarea
 
 textarea:focus
 {
-	background: #CCCCCC;
+	background: #ffffff;
 }
 
 textarea:hover
 {
-	background: #CCCCCC;
+	background: #ffffff;
 }
 
 select
 {
 	background: #BBBBBB;
 	color: #333333;
-	border: 2px solid #7A7A7A;
+	border: 0px solid #7A7A7A;
 	border-radius: 10px;
 	-moz- border-radius: 10px;
 	font-size: 14pt;
@@ -232,20 +231,20 @@ select
 
 select:focus
 {
-	background: #CCCCCC;
+	background: #ffffff;
 }
 
 select:hover
 {
-	background: #CCCCCC;
+	background: #ffffff;
 }
 
 
 input
 {
-	background: #BBBBBB;
-	color: #333333;
-	border: 2px solid #7A7A7A; 
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #000000; 
 	border-radius: 10px;
 	-moz- border-radius: 10px;
 	margin-bottom: 5px;
@@ -257,11 +256,11 @@ input
 
 input[type=submit]
 {
-	background: #BBBBBB;
-	color: #333333;
+	background: #ffffff;
+	color: #000000;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #7A7A7A;
+ 	border: 1px solid #000000;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
  	margin: 0;
@@ -270,7 +269,7 @@ input[type=submit]
 
 input[type=submit]:hover
 {
-	background: #888888;
+	background: #ffffff;
 	transition: background 0.3s ease-in-out;
 	-webkit- transition: background 0.3s ease-in-out;
 	-moz- transition: background 0.3s ease-in-out;
@@ -279,17 +278,17 @@ input[type=submit]:hover
 
 input[type=submit]:active
 {
-	border: 2px solid #111; 
+	border: 1px solid #111; 
 	font-size: 12pt;
 }
 
 input[type=reset]
 {
-	background: #BBBBBB;
-	color: #333333;
+	background: #ffffff;
+	color: #000000;
  	width: 135px;
  	height: 40px;
- 	border: 3px solid #7A7A7A;
+ 	border: 1px solid #7A7A7A;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
  	margin: 0;
@@ -298,7 +297,7 @@ input[type=reset]
 
 input[type=reset]:hover
 {
-	background: #888888;
+	background: #ffffff;
 	transition: background 0.3s ease-in-out;
 	-webkit- transition: background 0.3s ease-in-out;
 	-moz- transition: background 0.3s ease-in-out;
@@ -307,7 +306,7 @@ input[type=reset]:hover
 
 input[type=reset]:active
 {
-	border: 2px solid #000; 
+	border: 1px solid #000000; 
 	font-size: 12pt;
 }
 
@@ -315,14 +314,14 @@ a.join
 {
 	display:block;
 	color: #000000;
- 	border: 3px solid #000000;
+ 	border: 1px solid #000000;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
  	margin: auto 5px auto 0px;
  	padding: 5px;
- 	background: #236B8E; 
+ 	background: #ffffff; 
  	float: left;
- 	font-family: guildFont;
+ 	font-family: 'Fjalla One', sans-serif;
  	font-size: 12pt;
  	text-decoration: none;
 }

@@ -6,15 +6,14 @@
 
 @font-face
 {
-	font-family: whiteBoardFont;
-	src: url(WhiteBoard.ttf);
+	font-family: 'Fjalla One', sans-serif;
 }
 
 #navigation
 {
 	background: transparent;  /* Sets background of the menu */
 	font-size: 28px;   /* Sets font size of the menu headings */
-	font-family: whiteBoardFont;
+	font-family: 'Fjalla One', sans-serif;
 	
 	/* Everything below this point is positional formatting */
 	padding: 0;
@@ -74,7 +73,7 @@
 	display: none;
 	z-index: 999;
 	background: #AAAAAA;
-	border: 2px solid #AAAAAA;
+	border: 0px solid #AAAAAA;
 	border-radius: 10px;
 	-moz- border-radius: 10px;
 	color:white;
@@ -83,12 +82,12 @@
 #navigation ul li a
 {
 	width: auto;
-	color: #397D02;
+	color: #ffffff;
 }
 
 #navigation li ul li a
 {
-	font-size: 16pt;
+	font-size: 14pt;
 	text-align:left;
 }
 
@@ -99,8 +98,8 @@
 
 #navigation ul li:hover a
 {
-	background: #888888;
-	border: 1px solid #888888;
+	background: #ffffff;
+	border: 0px solid #888888;
 	border-radius: 10px;
 	transition: background 0.35s ease-in-out;
 	-webkit- transition: background 0.35s ease-in-out;

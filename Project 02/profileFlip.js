@@ -25,7 +25,8 @@ $(document).ready(function(){
 
             elem.flip({
                 direction:'lr',
-                speed: 250,
+                speed: 350,
+                color:'#DDDDDD',
                 onBefore: function(){
                     // Insert the contents of the .profileData div (hidden
                     // from view with display:none) into the clicked
@@ -55,6 +56,7 @@ function flipOver(){
         elem.flip({
                     direction:'lr',
                     speed: 350,
+                    color:'#DDDDDD',
                     onBefore: function(){
                         // Insert the contents of the .profileData div (hidden
                         // from view with display:none) into the clicked

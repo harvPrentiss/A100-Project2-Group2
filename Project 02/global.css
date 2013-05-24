@@ -27,7 +27,7 @@ a.title
 	text-decoration: none;
 	color: #236B8E;
 	padding: 1px;
-	margin-right: 20px;
+	margin: auto 10px auto 0px;
 }
 
 a.title:visited
@@ -37,10 +37,12 @@ a.title:visited
 
 a.title:hover
 {
-	background: #AAAAAA;
-	border: 1px solid #AAAAAA;
-	border-radius: 5px;
-	-moz- border-radius: 10px;
+	border:1px solid #999;
+
+    /* CSS3 inset shadow: */
+    -moz-box-shadow:0 0 30px #999 inset;
+    -webkit-box-shadow:0 0 30px #999 inset;
+    box-shadow:0 0 30px #999 inset;
 }
 
 .search
@@ -75,49 +77,66 @@ a.title:hover
 
 #contentContainer
 {
-	width: 95%;
+	width: 99%;
 	margin: 10px auto;
 	font-size: 16pt;
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px 2px;
 	float:left;
 }
 
 #leftContent
 {
-	width: 50%;
+	width: 60%;
 	float: left;
-	margin: 2px;
+	margin: 2px 0px;
 	text-align: left;
 }
 
 #rightContent
 {
-	width: 45%;
+	width: 30%;
 	float: right;
-	margin: 2px 2px 2px 0px;
-	text-align: left;
+	margin: 2px 0px;
+}
+
+.boxTitle
+{
+	height: auto;
+	border-bottom: 1px solid black;
 }
 
 #newsBox
 {
-	width: 90%;
-	margin: 5px auto;
+	width: 95%;
+	margin: 2px auto;
 	overflow:hidden;
 	border: 1px solid black;
-	padding-left: 5px;
+	border-radius: 5px;
+	-moz- border-radius: 2px;
+	background: #C4C4C4;
+}
+
+#newsBox img
+{
+	height: 100%;
+	width: 100%;
+	margin: 0px 0px;
 }
 
 #mapBox
 {
-	width: 90%;
-	margin: 5px auto;
+	width: 95%;
+	margin: 2px auto;
 	overflow:hidden;
 	border: 1px solid black;
-	padding: 5px;
+	border-radius: 5px;
+	-moz- border-radius: 5px;
+	padding: 5px 0px;
+	background: #C4C4C4;
 }
 
-img.mapBox
+#mapBox img
 {
 	height: 100%;
 	width: 100%;
@@ -125,11 +144,19 @@ img.mapBox
 
 #adBox
 {
-	width: 90%;
-	margin: 5px auto;
+	width: 95%;
+	margin: 2px auto;
 	overflow:hidden;
 	border: 1px solid black;
-	padding-left: 5px;
+	border-radius: 5px;
+	-moz- border-radius: 5px;
+	background: #C4C4C4;
+}
+
+#adBox img
+{
+	height: 100%;
+	width: 100%;
 }
 
 #footer
@@ -190,21 +217,6 @@ textarea:focus
 textarea:hover
 {
 	background: #CCCCCC;
-}
-
-img.banner
-{	
-	float: left;
-	margin: 0px 20px 10px 0px;
-}
-
-img.banner:hover
-{
-	background: #111111;
-	transition: background 0.5s ease-in-out;
-	-webkit- transition: background 0.5s ease-in-out;
-	-moz- transition: background 0.5s ease-in-out;
-	-o- transition: background 0.5s ease-in-out;
 }
 
 select
@@ -313,7 +325,6 @@ a.join
  	font-family: guildFont;
  	font-size: 12pt;
  	text-decoration: none;
- 	vertical-align: bottom;
 }
 
 a.join:hover

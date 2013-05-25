@@ -4,23 +4,28 @@
         <head>
                 <meta charset="UTF-8">
                 <title>Profile Page</title>
-                <link rel ="stylesheet" href="global.css">
-                <link rel ="stylesheet" href="navigationMenu.css">
+                <link rel ="stylesheet" href="Stylesheets/global.css">
+                <link rel ="stylesheet" href="Stylesheets/navigationMenu.css">
+                <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         </head>
 
         <body>
-        	<div id="header">
-                        
+                <div id="header">
+                        <a href="index.html" class="title">STARTUP GUILD</a>    
+                        <a href="signUp.html" class ="join">Join The Guild!</a>
+                        <input type="text" name="searchBox" class="search"><input type="button" name="searchBtn" value="Search" class="searchBtn">
+                                <div class="clear"></div>
                 </div>
                 <br>
-		<div id="contentContainer">
-                                <div>
+                <div id="mainContainer">
+					<div id="contentContainer">
+                                <p>Enter your information below to sign up.</p>
                                 <input type="text" name="CompanyName" placeholder="Company Name"></input>
                                 <br>
                                 <input type="text" name="Location" placeholder="Location"></input>
 								<br>
 								<input type="text" name="ContactName" placeholder="Contact's Name"></input>
-                                				<br>
+                                <br>
 								<input type="text" name="ContactEmail" placeholder="Contact's Email"></input>
 								<br>
 								<input type="text" name="Phone" placeholder="Phone"></input>
@@ -37,10 +42,10 @@
 							
 								</div>
 								<div>
-								<img src="url" alt="Picture">
-								<input type="file" name="upload" value="Upload">
+								<img alt="Picture">
+								<input type="file" name="upload">
 								</div>
-                                				<div>
+                                <div>
 								<br>
 								<textarea type="text" name="Mission" placeholder="Mission"></textarea>
 								<br>
@@ -61,6 +66,15 @@
                                 <br>
                                 <input type="submit" name="submit" value="Submit">
                 </div>
+                <div class="clear"></div>
+            </div>
+            <div id="footer">
+                        <div id="footerLeft">
+                                CT Startup Guild is owned and operated by Team 2 of the A100 Program.
+                        </div>
+                        <div id="footerRight">
+                                Copyright 2013
+                        </div>
+                </div>
         </body>
-
 </html>

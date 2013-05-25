@@ -215,6 +215,15 @@ a.title:hover
 	padding: 5px;
 }
 
+#skillsBox
+{
+	float:left;
+	width:25%;
+	border: 2px solid #236B8E;
+	margin-left: 5px;
+	padding: 5px;
+}
+
 #statsBox
 {
 	float:left;
@@ -224,19 +233,10 @@ a.title:hover
 	padding: 5px;
 }
 
-#skillsBox
-{
-	float:left;
-	width:27%;
-	border: 2px solid #236B8E;
-	margin-left: 5px;
-	padding: 5px;
-}
-
 #experienceBox
 {
 	float:left;
-	width: 30%;
+	width: 28%;
 	border: 2px solid #236B8E;
 	margin-right: 5px;
 	padding: 5px;
@@ -245,7 +245,7 @@ a.title:hover
 #showcaseBox
 {
 	float:left;
-	width:30%;
+	width:28%;
 	border: 2px solid #236B8E;
 	margin-right: 5px;
 	padding: 5px;
@@ -280,7 +280,7 @@ textarea
 	max-height: 100px;
 	background: #ffffff;
 	color: #333333;
-	border: 0px solid #5C5C5C;
+	border: 1px solid #236B8E;
 	border-radius: 10px;
 	-moz- border-radius: 10px;
 	font-size: 12pt;
@@ -345,6 +345,8 @@ input[type=submit]
  	margin: 0;
  	padding: 0; 
 }
+
+
 
 input[type=submit]:hover
 {

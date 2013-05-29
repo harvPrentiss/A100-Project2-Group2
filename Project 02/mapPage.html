@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel ="stylesheet" href="Stylesheets/global.css">
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
+    	<script type="text/javascript">
+      		function initialize() {
+        	var map = new google.maps.Map(document.getElementById("googleMap"), {
+            center: new google.maps.LatLng(41.304944,-72.92351),
+            zoom: 12,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+          });
+          // Adding markers
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(41.304944,-72.92351), 
+            map: map
+          });
+
+      		}
+
+          
+      		google.maps.event.addDomListener(window, 'load', initialize);
+    	</script>
+  </head>
+
+  <body>
+    <div id="header">
+            <a href="index.html" class="title">STARTUP GUILD</a>  
+            <a href="signUp.html" class ="join">Join The Guild!</a>
+            <p class="titleHeader">Welcome To The STARTUP GUILD!</p>
+            <input type="text" name="searchBox" class="search"><input type="button" name="searchBtn" value="Search" class="searchBtn">
+        <div class="clear"></div>
+    </div>
+
+    <div id="mainContainerMap">
+        <div id="contentContainerMap">
+          <div id="googleMap"></div>
+          
+
+          <div id="rightContent">
+
+            <div id="newsBox">
+                <a class="twitter-timeline" height="400" border-color="#000000"  data-theme="light" href="https://twitter.com/HarvardP" data-widget-id="339555100131475456">Tweets by @CodeA100</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+            <div id="adBox">
+              <img src="Images/adsMock.jpg"/>
+            </div>
+
+          </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+
+      <div id="footer">
+          <div id="footerLeft">
+            CT Startup Guild is owned and operated by Team 2 of the A100 Program.
+          </div>
+          <div id="footerRight">
+            Copyright 2013
+          </div>
+      </div>
+
+
+  </body>
+</html>

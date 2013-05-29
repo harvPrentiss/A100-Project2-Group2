@@ -4,15 +4,22 @@
         <head>
                 <meta charset="UTF-8">
                 <title>Startup Guild</title>
-                <link rel ="stylesheet" href="Stylesheets/global.css">
-                <link rel ="stylesheet" href="Stylesheets/navigationMenu.css">
-                <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+                <link rel ="stylesheet" href="Stylesheets/global2.css">
+                <link rel ="stylesheet" href="Stylesheets/profileTile3.css">
                 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+				<script type="text/javascript" src="Javascript/jquery.flip.min.js"></script>
+				<script type="text/javascript" src="Javascript/jquery.hoverIntent.minified.js"></script>
+				
+
+				<script type="text/javascript" src="profileFlip.js"></script>
         </head>
 
         <body>
         	<div id="header">
-        		<a href="index.html" class="title">STARTUP GUILD</a> 	
+        		<a href="index3.html" class="title">STARTUP GUILD</a> 	
         		<a href="signUp.html" class ="join">Join The Guild!</a>
         		<p class="titleHeader">Welcome To The STARTUP GUILD!</p>
         		<input type="text" name="searchBox" class="search"><input type="button" name="searchBtn" value="Search" class="searchBtn">
@@ -20,7 +27,8 @@
 			</div>
 			<div id="mainContainer">
 				<div id="contentContainer">
-					<div id="leftContent">					
+					<div id="leftContent">	
+					<div id="tileContainer">				
 						<!-- This is the master that would be used in the end
 							<div class="profileTile">
 	    						<div class="profileFlip">
@@ -40,6 +48,8 @@
 					    		</div>
 							</div>
 						-->
+						<a href="#tileContainer" class ="shuffle">Shuffle</a>
+						<div class="clear"></div>
 						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 							<div class="flipper">
 								<div class="front">
@@ -440,20 +450,18 @@
 				        		</div>
 				    		</div>
 						</div>
+					</div>
 						<div class="clear"></div>
 					</div>
 
 
 					<div id="rightContent">
 						<div id="newsBox">
-							<a class="twitter-timeline" height="400" border-color="#000000"  data-theme="light" href="https://twitter.com/HarvardP" data-widget-id="339555100131475456">Tweets by @CodeA100</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-
+							<img src="Images/twitterMock.png"/>
 						</div>
 						<br>
 						<div id="mapBox">
-							<a href="mapPage.html"><img src="Images/ctMap.gif"/></a>
+							<img src="Images/ctMap.gif"/>
 						</div>
 						<br>
 						<div id="adBox">

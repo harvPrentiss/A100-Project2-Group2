@@ -5,18 +5,24 @@
                 <meta charset="UTF-8">
                 <title>Profile Page</title>
                 <link rel ="stylesheet" href="Stylesheets/global.css">
-                <link rel ="stylesheet" href="Stylesheets/navigationMenu.css">
                 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         </head>
 
         <body>
                 <div id="header">
-                        <a href="index.html" class="title">STARTUP GUILD</a>    
-                        <a href="signUp.html" class ="join">Join The Guild!</a>
-                        <input type="text" name="searchBox" class="search"><input type="button" name="searchBtn" value="Search" class="searchBtn">
-                                <div class="clear"></div>
-                </div>
-                <br>
+                <a href="index.html" class="title">STARTUP GUILD</a>
+                <a href="signUp.php" class ="enter">Enter The Guild!</a>
+                <p class="titleHeader">Welcome To The STARTUP GUILD!</p>
+                <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
+                  <div>
+                    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" size="15" placeholder="Search..."/>
+                  </div>
+                </form>
+                <div class="clear"></div>
+            </div>
+                
                 <div id="mainContainer">
 					<div id="contentContainer">
                                 <p>Enter your information below to sign up.</p>
@@ -39,13 +45,9 @@
 								<input type="text" name="Website" placeholder="Company Website URL"></input>
 								<br>
 								<input type="text" name="Status" placeholder="We are looking for..."></input>
-							
-								</div>
-								<div>
+								<br>
 								<img alt="Picture">
 								<input type="file" name="upload">
-								</div>
-                                <div>
 								<br>
 								<textarea type="text" name="Mission" placeholder="Mission"></textarea>
 								<br>
@@ -61,7 +63,7 @@
 								<br>
 								<input type="text" name="Tags" placeholder="Java, Ruby, Design, Mobile Apps, etc..."></input>
 							
-								</div>
+								
                                 <br>
                                 <br>
                                 <input type="submit" name="submit" value="Submit">
@@ -70,11 +72,11 @@
             </div>
             <div id="footer">
                         <div id="footerLeft">
-                                CT Startup Guild is owned and operated by Team 2 of the A100 Program.
+                                <a href="aboutPage.html" class="about">About</a>
                         </div>
                         <div id="footerRight">
-                                Copyright 2013
+                                Startup Guild is owned and operated by Team 2 of the A100 Program.
                         </div>
-                </div>
+            </div>
         </body>
 </html>

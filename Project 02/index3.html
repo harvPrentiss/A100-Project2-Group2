@@ -4,9 +4,8 @@
         <head>
                 <meta charset="UTF-8">
                 <title>Startup Guild</title>
-                <link rel ="stylesheet" href="Stylesheets/global.css">
-                <link rel ="stylesheet" href="Stylesheets/navigationMenu.css">
-                <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+                <link rel ="stylesheet" href="Stylesheets/global2.css">
+                <link rel ="stylesheet" href="Stylesheets/profileTile3.css">
                 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 
                 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -20,18 +19,16 @@
 
         <body>
         	<div id="header">
-        		<a href="index.html" class="title">STARTUP GUILD</a> 	
+        		<a href="index3.html" class="title">STARTUP GUILD</a> 	
         		<a href="signUp.html" class ="join">Join The Guild!</a>
+        		<p class="titleHeader">Welcome To The STARTUP GUILD!</p>
         		<input type="text" name="searchBox" class="search"><input type="button" name="searchBtn" value="Search" class="searchBtn">
 				<div class="clear"></div>
 			</div>
 			<div id="mainContainer">
-				<div id="titleContainer">
-					<h1>Welcome To The STARTUP GUILD!</h1>
-					<p>See just some of the people and organizatons who are already a part of the Startup Guild</p>
-				</div>
 				<div id="contentContainer">
-					<div id="leftContent">
+					<div id="leftContent">	
+					<div id="tileContainer">				
 						<!-- This is the master that would be used in the end
 							<div class="profileTile">
 	    						<div class="profileFlip">
@@ -51,6 +48,8 @@
 					    		</div>
 							</div>
 						-->
+						<a href="#tileContainer" class ="shuffle">Shuffle</a>
+						<div class="clear"></div>
 						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 							<div class="flipper">
 								<div class="front">
@@ -451,22 +450,17 @@
 				        		</div>
 				    		</div>
 						</div>
+					</div>
 						<div class="clear"></div>
 					</div>
 
 
 					<div id="rightContent">
 						<div id="newsBox">
-							<div class="boxTitle">
-								<h1></h1>
-							</div>
 							<img src="Images/twitterMock.png"/>
 						</div>
 						<br>
 						<div id="mapBox">
-							<div class="boxTitle">
-								<h1></h1>
-							</div>
 							<img src="Images/ctMap.gif"/>
 						</div>
 						<br>

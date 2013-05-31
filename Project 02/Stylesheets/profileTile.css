@@ -28,11 +28,6 @@
     -moz-perspective: 1000;
 
     margin: 5px;
-    padding:5px;
-    background: #236B8E;
-    border: 1px solid #236B8E;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
 
 }
 
@@ -48,7 +43,7 @@
 {
     width:180px;
     height:180px;
-    float:left;  
+    float:left;    
 }
 
 /* flip speed goes here */
@@ -96,6 +91,8 @@
     -moz-transform: rotateY(180deg);
     background: #DDDDDD;
     font-size: 10pt;
+    width:180px;
+    height:180px;
 }
 
 .back a

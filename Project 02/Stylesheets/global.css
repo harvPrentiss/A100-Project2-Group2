@@ -105,19 +105,6 @@ a.title:hover
 
 }
 
-#welcomeContainer
-{
-	width: 99%;
-	float: left;
-	text-align:center;
-}
-
-#welcomeContainer p
-{
-	display: block;
-	text-align: center;
-}
-
 #mainContainer
 {
 	width: 100%;
@@ -201,6 +188,9 @@ a.title:hover
 	width: 95%;
 	margin: 0px auto 2px auto;
 	overflow:hidden;
+	border: 0px solid black;
+	border-radius: 5px;
+	-moz- border-radius: 2px;
 	background: #ffffff;
 }
 

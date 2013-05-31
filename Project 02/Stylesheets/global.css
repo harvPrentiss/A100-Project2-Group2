@@ -34,7 +34,8 @@ a.title
 	text-decoration: none;
 	color: #236B8E;
 	padding: 1px;
-	margin: auto 10px auto 0px;
+	margin: auto 5px;
+	text-align: left;
 }
 
 a.title:visited
@@ -54,19 +55,11 @@ a.title:hover
 
 .titleHeader
 {
-	text-align: center;
 	display: block;
 	float: left;
-	margin-left: 75px;
-}
-
-.search
-{
-	font-family: sans-serif;
-	font-size: 12pt;
-	vertical-align: bottom;
-	height: 15px;
-	float: right;
+	text-align: center;
+	width: 35%;	
+	font-size: 14pt;
 }
 
 #header
@@ -80,9 +73,36 @@ a.title:hover
     text-align: center;
 }
 
-#header input
+#headerNameBox
 {
-	font-size: 10pt;
+	float: left;
+	width: 19%;
+	margin-right: 10px;
+}
+
+#headerJoinBox
+{
+	float: left;
+	width: 10%;
+	height: 50px;
+}
+
+#headerMessageBox
+{
+	float: left;
+	width: 45%;
+}
+
+#headerSearchBox
+{
+	float:right;
+	width: 22%;
+	vertical-align: bottom;
+}
+
+#searchResults
+{
+
 }
 
 #mainContainer
@@ -126,6 +146,22 @@ a.title:hover
 	margin-left: 10px;
 }
 
+#mapContent
+{
+	background: gray;
+}
+
+#mapContent a
+{	
+    color: #236B8E;
+    text-decoration: none;
+    font-size: 12pt;
+    text-align: center;
+    display:block;
+    font-style: normal;
+    font-family: 'Fjalla One', sans-serif;
+}
+
 #leftContent
 {
 	width: 72%;
@@ -158,16 +194,11 @@ a.title:hover
 	background: #ffffff;
 }
 
-#newsBox img
-{
-	height: 100%;
-	width: 100%;
-	margin: 0;
-}
-
 #mapBox
 {
 	width: 95%;
+	max-height: 250px;
+	min-height: 100px;
 	margin: 2px auto;
 	overflow:hidden;
 	border: 2px solid #ffffff;
@@ -189,6 +220,8 @@ a.title:hover
 #adBox
 {
 	width: 95%;
+	max-height: 250px;
+	min-height: 100px;
 	margin: 2px auto;
 	overflow:hidden;
 	border: 0px solid black;
@@ -226,16 +259,23 @@ a.title:hover
 	text-align: right;
 }
 
-#signUpBox
-{
-	float: left;
-	margin-right: 20px;
-}
-
 #signInBox
 {
 	float:left;
-	margin-left: 20px;
+	margin: 0px 40px 0px 10px;
+}
+
+#signUpBox
+{
+	float:left;
+	margin-left: 0px 40px;
+	padding-left: 45px;
+	border-left: 1px solid #236B8E;
+}
+
+#signUpBox input[type=radio]
+{
+	color: #222222;
 }
 
 #avatarBox
@@ -434,6 +474,8 @@ input[type=reset]:active
 a.join
 {
 	display:block;
+	position: relative;
+	top:20%;
 	color: #236B8E;
  	border: 3px solid #236B8E;
  	border-radius: 10px;
@@ -441,7 +483,6 @@ a.join
  	margin: auto 5px auto 0px;
  	padding: 5px;
  	background: transparent; 
- 	float: left;
  	font-family: 'Fjalla One', sans-serif;
  	font-size: 12pt;
  	text-decoration: none;
@@ -457,77 +498,110 @@ a.join:active
 	border: 2px solid #000000;
 }
 
-input.joinRegular
+a.enter
 {
-	color: #000000;
- 	min-width: 135px;
- 	height: 40px;
- 	border: 3px solid #000000;
- 	border-radius: 10px;
-	-moz- border-radius: 10px;
- 	margin: 1px 0;
- 	padding: 5px;
- 	background: #F87531;
- 	font-size: 14pt;
-}
-
-input.joinRegular:hover
-{
-	color: #FFFFFF;
-}
-
-input.joinRegular:active
-{
-	border: 2px solid #FFFFFF;
-}
-
-input.searchBtn
-{
+	display:block;
+	float:left;
 	color: #236B8E;
- 	min-width: 100px;
- 	height: 30px;
  	border: 3px solid #236B8E;
  	border-radius: 10px;
 	-moz- border-radius: 10px;
- 	margin: auto 0;
+ 	margin: auto 5px auto 0px;
  	padding: 5px;
- 	background: transparent;
- 	font-size: 14pt;
- 	font-family: guildFont;
- 	vertical-align: bottom;
- 	float: right;
+ 	background: transparent; 
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 12pt;
+ 	text-decoration: none;
 }
 
-input.searchBtn:hover
+a.enter:hover
 {
 	color: #000000;
 }
 
-input.searchBtn:active
+a.enter:active
 {
 	border: 2px solid #000000;
 }
 
-::-webkit-input-placeholder {
+::-webkit-input-placeholder 
+{
    color: #333333;
    font-style: italic;
 }
 
-:-moz-input-placeholder { /* Firefox 18- */
+:-moz-input-placeholder 
+{ /* Firefox 18- */
    color: #333333;  
    font-style: italic;
    font-size: 8pt;
 }
 
-::-moz-input-placeholder {  /* Firefox 19+ */
+::-moz-input-placeholder 
+{  /* Firefox 19+ */
    color: #333333; 
    font-style: italic;
    font-size: 8pt; 
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder 
+{  
    color: #333333; 
    font-style: italic; 
    font-size: 8pt;
 }
 
+#styledSearchBox
+{
+	display: block;
+	float: right;
+	width: 25%;
+}
+
+#styledSearchBox input[type="text"] 
+{
+    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #d7d7d7;
+    width:70%;
+    padding: 6px 15px 6px 35px;
+    border: 2px solid #236B8E;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+ 
+#styledSearchBox input[type="text"]:focus 
+{
+    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
+    color: #000000;
+    width: 80%;
+    outline: 0;
+}
+
+#styledSearchBox input::-webkit-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}
+
+#styledSearchBox input::-moz-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}
+
+#styledSearchBox input:-ms-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}

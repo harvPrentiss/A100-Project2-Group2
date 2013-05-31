@@ -4,12 +4,12 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title>Community Map</title>
 		<link rel ="stylesheet" href="Stylesheets/global.css">
-    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
     	<script type="text/javascript">
       		function initialize() {
         	var map = new google.maps.Map(document.getElementById("googleMap"), {
-            center: new google.maps.LatLng(41.7452,-72.92351),
+            center: new google.maps.LatLng(41.304944,-72.92351),
             zoom: 12,
             mapTypeId: google.maps.MapTypeId.ROADMAP
           });
@@ -84,8 +84,8 @@
     <body>
         <div id="header">
             <a href="index.html" class="title">STARTUP GUILD</a>
-            <a href="signUp.html" class ="enter">Enter The Guild!</a>
-            <p class="titleHeader">Welcome To The STARTUP GUILD!</p>
+            <a href="signUp.php" class ="enter">Enter The Guild!</a>
+            <p class="titleHeader">We have awesome maps!</p>
             <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
             <div>
                 <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
@@ -122,14 +122,12 @@
     
 
           <div id="footer">
-              <div id="footerLeft">
-                CT Startup Guild is owned and operated by Team 2 of the A100 Program.
-              </div>
-              <div id="footerRight">
-                Copyright 2013
-              </div>
-          </div>
-
-
+                <div id="footerLeft">
+                    <a href="aboutPage.html" class="about">About</a>
+                </div>
+                <div id="footerRight">
+                    Startup Guild is owned and operated by Team 2 of the A100 Program.
+                </div>
+            </div>
   </body>
 </html>

@@ -239,7 +239,7 @@ a.title:hover
 #footer
 {
 	width: 100%;
-	margin: 10px 0px;
+	margin: 30px 0px;
 	border-top: 3px solid #236B8E;
 }
 
@@ -276,6 +276,13 @@ a.title:hover
 #signUpBox input[type=radio]
 {
 	color: #222222;
+	font-size: 14pt;
+}
+
+#profileType
+{
+	font-size: 14pt;
+	display: inline;
 }
 
 #avatarBox
@@ -354,7 +361,7 @@ h1
 
 p
 {
-	font-size: 12pt;
+	font-size: 14pt;
 }
 
 textarea
@@ -524,6 +531,34 @@ a.enter:active
 	border: 2px solid #000000;
 }
 
+a.about
+{
+	display:block;
+	float:left;
+	width: 15%;
+	color: #236B8E;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: 5px 20px;
+ 	padding: 5px;
+ 	background: transparent; 
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 12pt;
+ 	text-decoration: none;
+ 	text-align: center;
+}
+
+a.about:hover
+{
+	color: #000000;
+}
+
+a.about:active
+{
+	border: 2px solid #000000;
+}
+
 ::-webkit-input-placeholder 
 {
    color: #333333;
@@ -604,4 +639,33 @@ a.enter:active
 {
 	color: #6a6f75;
 	font-style: italic;
+}
+
+.quote
+{
+	font-style: italic;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.aboutHeader
+{
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.aboutList
+{
+	font-size: 14pt;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.aboutText
+{
+	font-size: 14pt;
+	text-indent: 25px;
+	margin-left: 20px;
 }

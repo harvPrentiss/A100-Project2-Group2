@@ -19,14 +19,13 @@ if(isset($_POST['submit'])){
                 <meta charset="UTF-8">
                 <title>Sign In</title>
                 <link rel ="stylesheet" href="Stylesheets/global.css">
-                <link rel ="stylesheet" href="Stylesheets/navigationMenu.css">
                 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
         </head>
         <body>
                 <div id="header">
                 <a href="index.html" class="title">STARTUP GUILD</a>
-                <a href="signUp.html" class ="enter">Enter The Guild!</a>
-                <p class="titleHeader">Welcome To The STARTUP GUILD!</p>
+                <a href="signUp.php" class ="enter">Enter The Guild!</a>
+                <p class="titleHeader">Enter At Your Own Risk...</p>
                 <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
                   <div>
                     <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
@@ -43,9 +42,10 @@ if(isset($_POST['submit'])){
                                     <div id="signInBox">
                                         <form method="post" action="signUp.php">
                                             Sign In Below.<br><br>
-                                            Email <input type="text" name="username">
+                                            <input type="text" name="username" placeholder="Email">
                                             <br>
-                                            Password <input type="password" name="password">
+                                            <input type="password" name="password" placeholder="Password">
+                                            <br>
                                             <br>
                                             <br>
                                             <input type="submit" name ="login" value="Login"> 
@@ -53,12 +53,12 @@ if(isset($_POST['submit'])){
                                     </div>
                                     <div id="signUpBox">
                                         Enter your info below to sign up<br><br>
-                                        Email <input type="text" name="username">
+                                        <input type="text" name="username" placeholder="Email">
                                         <br>
-                                        Password <input type="password" name="password">
+                                        <input type="password" name="password" placeholder="Password">
                                         <br>
-                                        <input type="radio" name="profileType" value="company">Company/Organization</input>  
-                                        <input type="radio" name="profileType" value="individual">Individual</input>
+                                        <input type="radio" name="profileType" value="company"><div id="profileType">Company/Organization</div></input>  
+                                        <input type="radio" name="profileType" value="individual"><div id="profileType">Individual</div></input>
                                         <br>
                                         <br>
                                         <input type="submit" name ="join" value="Join">
@@ -84,12 +84,12 @@ if(isset($_POST['submit'])){
                         <div class="clear"></div>
                 </div>
                 <div id="footer">
-                        <div id="footerLeft">
-                                CT Startup Guild is owned and operated by Team 2 of the A100 Program.
-                        </div>
-                        <div id="footerRight">
-                                Copyright 2013
-                        </div>
-                </div>
+                    <div id="footerLeft">
+                        <a href="aboutPage.html" class="about">About</a>
+                    </div>
+                    <div id="footerRight">
+                        Startup Guild is owned and operated by Team 2 of the A100 Program.
+                    </div>
+            </div>
         </body>
 </html>

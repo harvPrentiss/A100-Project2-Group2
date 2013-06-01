@@ -1,0 +1,671 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	background:#ffffff;
+	color: #222222;
+	font-family: sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face
+{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+.clear
+{
+	clear:both;
+	height: 0;
+	overflow: hidden;
+}
+
+a.title
+{
+	display: block;
+	float: left;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 30pt;
+	text-decoration: none;
+	color: #236B8E;
+	padding: 1px;
+	margin: auto 5px;
+	text-align: left;
+}
+
+a.title:visited
+{
+	color: #236B8E;
+}
+
+a.title:hover
+{
+	border:1px solid #999;
+
+    /* CSS3 inset shadow: */
+    -moz-box-shadow:0 0 30px #999 inset;
+    -webkit-box-shadow:0 0 30px #999 inset;
+    box-shadow:0 0 30px #999 inset;
+}
+
+.titleHeader
+{
+	display: block;
+	float: left;
+	text-align: center;
+	width: 35%;	
+	font-size: 14pt;
+}
+
+#header
+{
+	width: 100%;
+	border-bottom: 3px solid #236B8E;
+    margin: 5px 20px 10px auto;
+    font-family: 'Fjalla One', sans-serif;
+    color: #000000;
+    font-size: 20pt;
+    text-align: center;
+}
+
+#headerNameBox
+{
+	float: left;
+	width: 19%;
+	margin-right: 10px;
+}
+
+#headerJoinBox
+{
+	float: left;
+	width: 10%;
+	height: 50px;
+}
+
+#headerMessageBox
+{
+	float: left;
+	width: 45%;
+}
+
+#headerSearchBox
+{
+	float:right;
+	width: 22%;
+	vertical-align: bottom;
+}
+
+#searchResults
+{
+
+}
+
+#mainContainer
+{
+	width: 100%;
+}
+
+#contentContainer
+{
+	width: 99%;
+	margin: 10px auto;
+	font-size: 16pt;
+	font-weight: bold;
+	padding: 10px 2px;
+	float:left;
+}
+
+#mainContainerMap
+{
+	width: 100%;
+	height: 100%;
+}
+
+#contentContainerMap
+{
+	width: 99%;
+	margin: 10px auto;
+	font-size: 16pt;
+	font-weight: bold;
+	padding: 10px 2px;
+	float:left;
+	height: 100%;
+}
+
+#googleMap
+{
+	height: 80%;
+	width: 72%;
+	float: left;
+	border: 2px solid #236B8E;
+	margin-left: 10px;
+}
+
+#mapContent
+{
+	background: gray;
+}
+
+#mapContent a
+{	
+    color: #236B8E;
+    text-decoration: none;
+    font-size: 12pt;
+    text-align: center;
+    display:block;
+    font-style: normal;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#leftContent
+{
+	width: 72%;
+	float: left;
+	margin: 1px 0px;
+	text-align: left;
+}
+
+#rightContent
+{
+	width: 25%;
+	float: right;
+	margin: 1px 0px;
+}
+
+.boxTitle
+{
+	height: auto;
+	border-bottom: 0px solid black;
+}
+
+#newsBox
+{
+	width: 95%;
+	margin: 0px auto 2px auto;
+	overflow:hidden;
+	border: 0px solid black;
+	border-radius: 5px;
+	-moz- border-radius: 2px;
+	background: #ffffff;
+}
+
+#mapBox
+{
+	width: 95%;
+	max-height: 250px;
+	min-height: 100px;
+	margin: 2px auto;
+	overflow:hidden;
+	border: 2px solid #ffffff;
+	padding: 5px 0px;
+	background: #ffffff;
+}
+
+#mapBox img
+{
+	height: 100%;
+	width: 100%;
+}
+
+#mapBox:hover
+{
+	border: 2px solid black;
+}
+
+#adBox
+{
+	width: 95%;
+	max-height: 250px;
+	min-height: 100px;
+	margin: 2px auto;
+	overflow:hidden;
+	border: 0px solid black;
+	border-radius: 5px;
+	-moz- border-radius: 5px;
+	background: #ffffff;
+}
+
+#adBox img
+{
+	height: 100%;
+	width: 100%;
+}
+
+#footer
+{
+	width: 100%;
+	margin: 30px 0px;
+	border-top: 3px solid #236B8E;
+}
+
+#footerLeft
+{
+	width: 45%;
+	float: left;
+	margin: 5px auto;
+	text-align: left;
+}
+
+#footerRight
+{
+	width: 45%;
+	float: right;
+	margin: 5px auto;
+	text-align: right;
+}
+
+#signInBox
+{
+	float:left;
+	margin: 0px 40px 0px 10px;
+}
+
+#signUpBox
+{
+	float:left;
+	margin-left: 0px 40px;
+	padding-left: 45px;
+	border-left: 1px solid #236B8E;
+}
+
+#signUpBox input[type=radio]
+{
+	color: #222222;
+	font-size: 14pt;
+}
+
+#profileType
+{
+	font-size: 14pt;
+	display: inline;
+}
+
+#avatarBox
+{
+	float:left;
+	width: 10%;
+	margin-right: 5px;
+}
+
+#avatarBox img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#aboutMeBox
+{
+	float:left;
+	width: 60%;
+	border: 2px solid #236B8E;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+#skillsBox
+{
+	float:left;
+	width:25%;
+	border: 2px solid #236B8E;
+	margin-left: 5px;
+	padding: 5px;
+}
+
+#statsBox
+{
+	float:left;
+	width: 20%;
+	border: 2px solid #236B8E;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+#experienceBox
+{
+	float:left;
+	width: 28%;
+	border: 2px solid #236B8E;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+#showcaseBox
+{
+	float:left;
+	width:28%;
+	border: 2px solid #236B8E;
+	margin-right: 5px;
+	padding: 5px;
+}
+
+#contactBox
+{
+	float:left;
+	width:15%;
+	border: 2px solid #236B8E;
+	margin-left:5px;
+	padding: 5px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 18pt;
+	font-family: 'Fjalla One', sans-serif;
+}
+
+p
+{
+	font-size: 14pt;
+}
+
+textarea
+{
+	min-width: 60%;
+	max-width: 60%;
+	min-height: 75px;
+	max-height: 100px;
+	background: #ffffff;
+	color: #333333;
+	border: 1px solid #236B8E;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
+	font-size: 12pt;
+	margin-bottom: 5px;
+}
+
+textarea:focus
+{
+	background: #ffffff;
+}
+
+textarea:hover
+{
+	background: #ffffff;
+}
+
+select
+{
+	background: #BBBBBB;
+	color: #333333;
+	border: 0px solid #7A7A7A;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
+	font-size: 14pt;
+	margin-bottom: 5px;
+}
+
+select:focus
+{
+	background: #ffffff;
+}
+
+select:hover
+{
+	background: #ffffff;
+}
+
+
+input
+{
+	background: #ffffff;
+	color: #000000;
+	border: 1px solid #000000; 
+	border-radius: 10px;
+	-moz- border-radius: 10px;
+	margin-bottom: 5px;
+	font-size: 12pt;
+	padding: 5px 15px 5px 2px;
+}
+
+
+
+input[type=submit]
+{
+	background: #ffffff;
+	color: #236B8E;
+ 	width: 135px;
+ 	height: 40px;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: 0;
+ 	padding: 0; 
+}
+
+
+
+input[type=submit]:hover
+{
+	color: #000000;
+}
+
+input[type=submit]:active
+{
+	border: 3px solid #000000; 
+}
+
+input[type=reset]
+{
+	background: #ffffff;
+	color: #000000;
+ 	width: 135px;
+ 	height: 40px;
+ 	border: 1px solid #7A7A7A;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: 0;
+ 	padding: 0; 
+}
+
+input[type=reset]:hover
+{
+	background: #ffffff;
+	transition: background 0.3s ease-in-out;
+	-webkit- transition: background 0.3s ease-in-out;
+	-moz- transition: background 0.3s ease-in-out;
+	-o- transition: background 0.3s ease-in-out; 
+}
+
+input[type=reset]:active
+{
+	border: 1px solid #000000; 
+	font-size: 12pt;
+}
+
+a.join
+{
+	display:block;
+	position: relative;
+	top:20%;
+	color: #236B8E;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: auto 5px auto 0px;
+ 	padding: 5px;
+ 	background: transparent; 
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 12pt;
+ 	text-decoration: none;
+}
+
+a.join:hover
+{
+	color: #000000;
+}
+
+a.join:active
+{
+	border: 2px solid #000000;
+}
+
+a.enter
+{
+	display:block;
+	float:left;
+	color: #236B8E;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: auto 5px auto 0px;
+ 	padding: 5px;
+ 	background: transparent; 
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 12pt;
+ 	text-decoration: none;
+}
+
+a.enter:hover
+{
+	color: #000000;
+}
+
+a.enter:active
+{
+	border: 2px solid #000000;
+}
+
+a.about
+{
+	display:block;
+	float:left;
+	width: 15%;
+	color: #236B8E;
+ 	border: 3px solid #236B8E;
+ 	border-radius: 10px;
+	-moz- border-radius: 10px;
+ 	margin: 5px 20px;
+ 	padding: 5px;
+ 	background: transparent; 
+ 	font-family: 'Fjalla One', sans-serif;
+ 	font-size: 12pt;
+ 	text-decoration: none;
+ 	text-align: center;
+}
+
+a.about:hover
+{
+	color: #000000;
+}
+
+a.about:active
+{
+	border: 2px solid #000000;
+}
+
+::-webkit-input-placeholder 
+{
+   color: #333333;
+   font-style: italic;
+}
+
+:-moz-input-placeholder 
+{ /* Firefox 18- */
+   color: #333333;  
+   font-style: italic;
+   font-size: 8pt;
+}
+
+::-moz-input-placeholder 
+{  /* Firefox 19+ */
+   color: #333333; 
+   font-style: italic;
+   font-size: 8pt; 
+}
+
+:-ms-input-placeholder 
+{  
+   color: #333333; 
+   font-style: italic; 
+   font-size: 8pt;
+}
+
+#styledSearchBox
+{
+	display: block;
+	float: right;
+	width: 25%;
+}
+
+#styledSearchBox input[type="text"] 
+{
+    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #d7d7d7;
+    width:70%;
+    padding: 6px 15px 6px 35px;
+    border: 2px solid #236B8E;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+ 
+#styledSearchBox input[type="text"]:focus 
+{
+    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
+    color: #000000;
+    width: 80%;
+    outline: 0;
+}
+
+#styledSearchBox input::-webkit-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}
+
+#styledSearchBox input::-moz-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}
+
+#styledSearchBox input:-ms-input-placeholder
+{
+	color: #6a6f75;
+	font-style: italic;
+}
+
+.quote
+{
+	font-style: italic;
+	font-size: 16pt;
+	text-align: center;
+}
+
+.aboutHeader
+{
+	font-size: 18pt;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.aboutList
+{
+	font-size: 14pt;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.aboutText
+{
+	font-size: 14pt;
+	text-indent: 25px;
+	margin-left: 20px;
+}

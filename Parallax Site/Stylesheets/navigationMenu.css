@@ -1,0 +1,109 @@
+/* Navigation menu style
+ - horizontal
+ - drop down for more links
+*/
+
+
+@font-face
+{
+	font-family: 'Fjalla One', sans-serif;
+}
+
+#navigation
+{
+	background: transparent;  /* Sets background of the menu */
+	font-size: 28px;   /* Sets font size of the menu headings */
+	font-family: 'Fjalla One', sans-serif;
+	
+	/* Everything below this point is positional formatting */
+	padding: 0;
+	margin: 0;
+	float:left;
+	text-align:center;
+	padding: 0;
+	list-style: none;
+	display:inline;
+}
+		
+#navigation > li
+{
+	/*border: 1px solid #AAAAAA;*/  /* Puts a border around the main headers of the menu  */
+		
+    /* Everything below this point is positional formatting */
+    list-style:none;
+    margin:0px 0px 0px 5px;
+    padding:0;
+    position:relative;
+    display: block;
+    float:left;
+    background: transparent;
+}
+
+#navigation > li > a
+{
+	color: #397D02;
+	font-weight: bold;
+}
+
+#navigation > li:hover > a
+{
+	background: #AAAAAA;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
+	transition: background 0.45s ease-in-out;
+	-webkit- transition: background 0.45s ease-in-out;
+	-moz- transition: background 0.45s ease-in-out;
+	-o- transition: background 0.45s ease-in-out;
+}
+
+#navigation li a
+{
+	display: block;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 1em;
+	text-decoration: none;
+}
+			
+#navigation ul
+{
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	display: none;
+	z-index: 999;
+	background: #AAAAAA;
+	border: 0px solid #AAAAAA;
+	border-radius: 10px;
+	-moz- border-radius: 10px;
+	color:white;
+}
+
+#navigation ul li a
+{
+	width: auto;
+	color: #ffffff;
+}
+
+#navigation li ul li a
+{
+	font-size: 14pt;
+	text-align:left;
+}
+
+#navigation li:hover ul
+{	
+	display: block;
+}
+
+#navigation ul li:hover a
+{
+	background: #ffffff;
+	border: 0px solid #888888;
+	border-radius: 10px;
+	transition: background 0.35s ease-in-out;
+	-webkit- transition: background 0.35s ease-in-out;
+	-moz- transition: background 0.35s ease-in-out;
+	-o- transition: background 0.35s ease-in-out;
+}
+

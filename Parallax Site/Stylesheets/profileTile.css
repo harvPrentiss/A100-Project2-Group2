@@ -69,6 +69,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    background: #DDDDDD;
 }
 
 /* front pane, placed above back */
@@ -89,7 +90,6 @@
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
-    background: #DDDDDD;
     font-size: 10pt;
     width:180px;
     height:180px;

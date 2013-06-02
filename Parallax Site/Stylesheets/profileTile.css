@@ -41,8 +41,8 @@
 
 .flip-container, .front, .back 
 {
-    width:180px;
-    height:180px;
+    width:175px;
+    height:175px;
     float:left;    
 }
 
@@ -90,9 +90,7 @@
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
-    font-size: 10pt;
-    width:180px;
-    height:180px;
+    font-size: 12pt;
 }
 
 .back a

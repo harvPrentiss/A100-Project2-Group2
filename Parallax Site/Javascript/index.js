@@ -16,11 +16,15 @@ $(document).ready(function () {
 	});
 
 	parallax.add($("#home"))
-			.add($("#community"))
+			.add($("#twitter"))
 			.add($("#map"))
 			.add($("#profileHome"))
 			.add($("#profileEdit"))
-			.add($("#navigation"));
+			.add($("#homeNav"))
+			.add($("#twitterNav"))
+			.add($("#mapNav"))
+			.add($("#proHomeNav"))
+			.add($("#proEditNav"));
 
 	parallax.background = $("body");
 
@@ -33,35 +37,51 @@ $(document).ready(function () {
 
 	//Setting up page navigation
 	parallax.home.onload=function(){
-		setTop("navigation", "Navigation");
-		setRight("community", "Community");
+		setTop("homeNav", "Navigation");
+		setRight("twitter", "Community");
 		setLeft("profileHome","Profile");
 	};
 
-	parallax.community.onload=function(){
-		setTop("navigation", "Navigation");
+	parallax.twitter.onload=function(){
+		setTop("twitterNav", "Navigation");
 		setLeft("home","Home");
 		setRight("map", "Map");
 	};
 
 	parallax.map.onload=function(){
-		setTop("navigation", "Navigation");
-		setLeft("community", "Community");
+		setTop("mapNav", "Navigation");
+		setLeft("twitter", "Community");
 	};
 
 	parallax.profileHome.onload=function(){
-		setTop("navigation", "Navigation");
+		setTop("proHomeNav", "Navigation");
 		setLeft("profileEdit", "Edit");
 		setRight("home","Home");
 	};
 
 	parallax.profileEdit.onload=function(){
-		setTop("navigation", "Navigation");
+		setTop("proEditNav", "Navigation");
 		setRight("profileHome","Profile");
 	};
 
-	parallax.navigation.onload=function(){
+	parallax.homeNav.onload=function(){
 		setBottom("home", "Home");
+	};
+
+	parallax.twitterNav.onload=function(){
+		setBottom("twitter", "Community");
+	};
+
+	parallax.mapNav.onload=function(){
+		setBottom("map", "Map");
+	};
+
+	parallax.proHomeNav.onload=function(){
+		setBottom("profileHome", "Profile");
+	};
+
+	parallax.proEditNav.onload=function(){
+		setBottom("profileEdit", "Edit");
 	};
 
 

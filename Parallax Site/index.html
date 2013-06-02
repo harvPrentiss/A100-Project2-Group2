@@ -4,83 +4,52 @@
         <head>
             <meta charset="UTF-8">
             <title>Startup Guild</title>
-            <link rel="Stylesheet" type="text/css" href="Stylesheets/xo.css" />
+            <link rel="Stylesheet" type="text/css" href="Stylesheets/xo.css" /> <!-- THIS MUST BE FIRST -->
+
+            <!-- Stylesheets -->
             <link rel ="stylesheet" href="Stylesheets/global.css">
-            <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-            <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
+            <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+
+            <!-- Scripts -->
             <script type="text/javascript" src="Javascript/jq.js"></script>
             <script type="text/javascript" src="Javascript/parallax.min.js"></script>
             <script type="text/javascript" src="Javascript/index.js"></script>            
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
     		<script type="text/javascript" src="Javascript/googleMap.js"></script>
-
-            <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+            
         </head>
 
         <body>
 
-        	
+        	<div id="header">
+        		<img src="Images/header.gif"/>
+        	</div>s
         	<div id="container">
-        		<!-- Home div in the slide position center
+        		<!-- Home div in the slide. Position center
         			Left: Social div
         			Down: Map div
         			Right: Tile div -->
         		<div id="home">
         			<div id="contentContainer">
-	        			<p class="aboutText">The Startup Guild exists to be a community site for the startup scene in Connecticut, and hopefully beyond in the future. This is a place to meet other like minded individuals or 
-							organizations in the startup ecosystem. The Startup Guild is a place where the community can thrive and grow by sharing knowledge and expereince. The Startup Guild has features for both individuals and companies.</p> 
-						<br>
-						<ul class="aboutHeader">Companies/Organizations
-							<li class="aboutList">Get your company out in the community spotlight</li>
-							<li class="aboutList">Post jobs on your companies profile page and get notified of interested parties</li>
-							<li class="aboutList">Find talented individuals looking for work in the startup community</li>
-							<li class="aboutList">Connect with other companies an organizations within the community</li>
-						</ul>
-						<br>
-						<ul class="aboutHeader">Individuals
-							<li class="aboutList">Get yourself in the community spotlight</li>
-							<li class="aboutList">Find job postings on company profiles or through the Startup Guild Twitter</li>
-							<li class="aboutList">Connect with other individuals in the startup community</li>
-							<li class="aboutList">Showcase your talents on your own profile</li>
-						</ul>
-						<br>
-						<br>
-						<p class="quote">"Alone we can do so little; together we can do so much." - Helen Keller</p> 
-					</div>
-        		</div>
-
-        		<!-- Map div that will be the upper div
-        			Up: Home div -->
-        		<div id="map">
-        			<div id="contentContainer">
-        				<div id="googleMap"></div>
-        			</div>
-        		</div>
-
-        		<!-- Social div will be to the left
-        			Left: Tile div
-        			Right: Home -->
-        		<div id="community">
-        			<div id="contentContainer">
-        				<div id="tileBox">
+	        			<div id="tileBox">
         					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-							<div class="flipper">
-								<div class="front">
-									<!-- front content -->
-									<img src="Images/wayne-enterprises.jpg"/>
-								</div>
-								<div class="back">
-									<!-- back content -->
-									<a href="#">Wayne Enterprises</a><br>
-				            		Location: Gotham City<br><br>
-				            		Field: Conglomerate<br><br>
-				            		"We are Gotham."<br><br>
-				            		<div class="profileLinks">
-				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/>
-				            		</div>
+								<div class="flipper">
+									<div class="front">
+										<!-- front content -->
+										<img src="Images/wayne-enterprises.jpg"/>
+									</div>
+									<div class="back">
+										<!-- back content -->
+										<a href="#">Wayne Enterprises</a><br>
+					            		Location: Gotham City<br><br>
+					            		Field: Conglomerate<br><br>
+					            		"We are Gotham."<br><br>
+					            		<div class="profileLinks">
+					            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/>
+					            		</div>
+									</div>
 								</div>
 							</div>
-						</div>
 
 						
 						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
@@ -463,34 +432,123 @@
 				        		</div>
 				    		</div>
 						</div>
-        				</div>
-		        			
-						<div id="newsContainer">
-			        		<a class="twitter-timeline" height="400" border-color="#000000"  data-theme="light" href="https://twitter.com/HarvardP" data-widget-id="339555100131475456">Tweets by @CodeA100</a>
-			                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>
+        		</div>
+        	</div>
+
+        		<!-- Map div that will be the far right div
+        			Left: Twitter div
+        			Up: Navigation -->
+        		<div id="map">
+        			<div id="contentContainer">
+        				<div id="googleMap"></div>
+        			</div>
+        		</div>
+
+        		<!-- Twitter div will be to the right
+        			Left: Home
+        			Right: Map
+        			Up: Navigation -->
+        		<div id="twitter">
+        			<div id="contentContainer">
+        				<div id="newsContainer">
+			        		<div id="recentJobs">
+			        			Recent Jobs
+			        			<br>
+			        			This is where recent job postings will. they will be in list format.
+			        		</div>
+			        		<div id="newMembers">
+			        			New Members
+			        			<br>
+			        			This will be a list of new members to the site done in list format.
+			        		</div>
 		                </div>
+		                <div id="twitterBox">
+		                	<a class="twitter-timeline" height="400" border-color="#000000"  data-theme="light" href="https://twitter.com/HarvardP" data-widget-id="339555100131475456">Tweets by @CodeA100</a>
+			                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			            </div>
 		            </div>
         		</div>
 
+        		<!-- Profile div will be to the left
+        			Left: Profile Edit
+        			Right: Home
+        			Up: Navigation -->
         		<div id="profileHome">
         			<div id="contentContainer">
         				Profile Home
         			</div>
         		</div>
 
+
+				<!-- ProfileEdit div will be to the right
+        			Right: Profile
+        			Up: Navigation -->
         		<div id="profileEdit">
         			<div id="contentContainer">
         				Profile Edit 
         			</div>
         		</div>
 
-        		<div id="navigation">
+        		<!-- Navigation div will be up each section needs it's own navigation div so 
+        			you can return from navigation to where you were
+        			Down: Whereever you came from -->
+        		<div id="homeNav">
         			<div id="contentContainer">
-        				<div id="header">
-				            <a href="index.html" class="title">STARTUP GUILD</a>
-				            <a href="signUp.php" class ="enter">Enter The Guild!</a>
-				            <p class="titleHeader">Welcome To The STARTUP GUILD!</p>
-				            
+        				<div id="navLinksBar">
+        					<ui>
+        						<li><a href="#home">Home</a></li>
+        						<li><a href="#map">Map</a></li>
+        						<li><a href="#community">Community</a></li>
+        						<li><a href="#profileHome">Profile Home</a></li>
+        						<li><a href="#profileEdit">Profile Edit</a></li>
+        					</ul>
+        				</div>
+        				<div id="searchContainer">				            
+			                <!--<form method="get" action="#results" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
+							  <div>
+							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" size="15" placeholder="Search..."/>
+							  </div>
+							</form>
+			    			<br>
+				    		<div id="searchResults">
+				    			<a name="results"></a>
+								<script>
+								  (function() {
+								    var cx = '015632362458750749219:lws8bshesim';
+								    var gcse = document.createElement('script');
+								    gcse.type = 'text/javascript';
+								    gcse.async = true;
+								    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+								        '//www.google.com/cse/cse.js?cx=' + cx;
+								    var s = document.getElementsByTagName('script')[0];
+								    s.parentNode.insertBefore(gcse, s);
+								  })();
+								</script>
+								<gcse:searchresults-only></gcse:searchresults-only>
+	        				</div>-->
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							    })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        		<div id="twitterNav">
+        			<div id="contentContainer">
+        				<div id="navBar">				            
 			                <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
 							  <div>
 							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
@@ -499,22 +557,134 @@
 							  </div>
 							</form>
 			    		</div>
+			    		<div id="searchResults">
+							<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:searchresults-only></gcse:searchresults-only>
+        				</div>
         			</div>
         		</div>
 
+        		<div id="mapNav">
+        			<div id="contentContainer">
+        				<div id="navBar">				            
+			                <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
+							  <div>
+							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" size="15" placeholder="Search..."/>
+							  </div>
+							</form>
+			    		</div>
+			    		<div id="searchResults">
+							<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:searchresults-only></gcse:searchresults-only>
+        				</div>
+        			</div>
+        		</div>
 
+        		<div id="proHomeNav">
+        			<div id="contentContainer">
+        				<div id="navBar">				            
+			                <form method="get" action="searchResults.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
+							  <div>
+							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" size="15" placeholder="Search..."/>
+							  </div>
+							</form>
+			    		</div>
+			    		<div id="searchResults">
+							<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:searchresults-only></gcse:searchresults-only>
+        				</div>
+        			</div>
+        		</div>
+
+        		<div id="proEditNav">
+        			<div id="contentContainer">
+        				<div id="navLinksBar">
+        					<ui>
+        						<li><a href="#home">Home</a></li>
+        						<li><a href="#map">Map</a></li>
+        						<li><a href="#community">Community</a></li>
+        						<li><a href="#profileHome">Profile Home</a></li>
+        						<li><a href="#profileEdit">Profile Edit</a></li>
+        					</ul>
+        				</div>
+        				<div id="searchContainer">				            
+			                <form method="get" action="index.html" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
+							  <div>
+							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
+							    <input type="hidden" name="ie" value="UTF-8" />
+							    <input type="text" name="q" size="15" placeholder="Search..."/>
+							  </div>
+							</form>
+				    		<br>
+				    		<div id="searchResults">
+								<script>
+								  (function() {
+								    var cx = '015632362458750749219:lws8bshesim';
+								    var gcse = document.createElement('script');
+								    gcse.type = 'text/javascript';
+								    gcse.async = true;
+								    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+								        '//www.google.com/cse/cse.js?cx=' + cx;
+								    var s = document.getElementsByTagName('script')[0];
+								    s.parentNode.insertBefore(gcse, s);
+								  })();
+								</script>
+								<gcse:searchresults-only></gcse:searchresults-only>
+	        				</div>
+	        			</div>
+        			</div>
+        		</div>
+
+        	<!-- Navigational arrows. These don't chnage except for the image and width -->
         	<div id="leftControl" class="control">
-				<img id="leftArrow" class="arrow left" style="width:60px" src="Images/arrowleft2.png"></img>
+				<img id="leftArrow" class="arrow left" style="width:60px" src="Images/left-arrow.gif"></img>
 				<div id="leftText" class="dirText" style="float:right"> Test</div>
 			</div>
 
 			<div id="rightControl" class="control">
-				<img id="rightArrow" class="arrow right" style="width:60px" src="Images/arrowright2.png"></img>
+				<img id="rightArrow" class="arrow right" style="width:60px" src="Images/right-arrow.gif"></img>
 				<div id="rightText" class="dirText" style="float:left"> Test</div>
 			</div>
 
 			<div id="topControl" class="control center" style="width:145px;left:45%;">
-				<img id="topArrow" class="arrow left" style="height:60px" src="Images/arrowtop2.png"></img>
+				<img id="topArrow" class="arrow left" style="height:60px" src="Images/top-Arrow.gif"></img>
 				<div id="topText" class="dirText txtcenter" > Test</div>
 			</div>
 

@@ -12,7 +12,8 @@
 
             <!-- Scripts -->
             <script type="text/javascript" src="Javascript/jq.js"></script>
-            <script type="text/javascript" src="Javascript/parallax.min.js"></script>
+            <script type="text/javascript" src="Javascript/jquery.touchSwipe.min.js"></script>
+            <script type="text/javascript" src="Javascript/parallax.js"></script>
             <script type="text/javascript" src="Javascript/index.js"></script>            
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
     		<script type="text/javascript" src="Javascript/googleMap.js"></script>
@@ -441,7 +442,12 @@
         			Up: Navigation -->
         		<div id="map">
         			<div id="contentContainer">
-        				<div id="googleMap"></div>
+        				<div id="mapBox">
+        					<div id="googleMap"></div>
+        				</div>
+        				<div id="filtersBox">
+        					Filters
+        				</div>
         			</div>
         		</div>
 

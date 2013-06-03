@@ -15,6 +15,21 @@ $(document).ready(function () {
 		}
 	});
 
+	/*var mainContainer = document.getElementById("container")
+	$(mainContainer).swipe({
+		swipe:function(event, direction, distance, duration, fingerCount){
+			if(direction == 'right'){
+				rightKey();
+			} else if(direction == 'left'){
+				leftKey();
+			} else if(direction == 'up'){
+				topKey();
+			} else if(direction == 'down'){
+				bottomKey();
+			}
+		}, threshold: 0
+	});*/
+
 	parallax.add($("#home"))
 			.add($("#twitter"))
 			.add($("#map"))

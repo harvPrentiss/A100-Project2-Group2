@@ -11,7 +11,7 @@ html
 
 body
 {
-	background: url(../Images/ITWORKS.jpg) #bbbbbb;
+	background: url(../Images/ugly.jpg) #bbbbbb;
 	color: #222222;
 	font-family: Cousine;
 	margin: 0;
@@ -53,14 +53,14 @@ body
 #leftControlText
 {
 	position: fixed;
-	top: 33%;
+	top: 30%;
 	left: 0px;
 }
 
 #rightControlText
 {
 	position: fixed;
-	top: 33%;
+	top: 30%;
 	right: 0px;
 }
 
@@ -70,8 +70,8 @@ body
 
 /* Arrow text */
 .dirText{
-	color: #d9e78f;
-	font-size:18pt;
+	color: #96BF49;
+	font-size:14pt;
 	opacity:0.0;
 }
 
@@ -192,6 +192,7 @@ body
 {
 	float:left;
 	width: 100%;
+	margin: 0px 10px;
 }
 
 #navLinksBar
@@ -204,8 +205,8 @@ body
 
 #navBox
 {
-	background: rgba(10, 10, 10, 0.8);
-	width: 185px;
+	background: rgba(10, 10, 10, 0.6);
+	width: 190px;
 }
 
 .navList 
@@ -223,7 +224,7 @@ body
 #navLinkBtn
 {
 	color: #96bf49;
-	border: none;
+	text-decoration: none;
 }
 
 #navLinkBtn:hover
@@ -235,8 +236,9 @@ body
 {
 	float: left;
 	width: 83%;
-	margin-left: 5px;
+	margin-left: 10px;
 	margin-right: 5px;
+	padding: 5px;
 }
 
 #map

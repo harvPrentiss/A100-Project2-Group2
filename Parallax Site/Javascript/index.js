@@ -27,7 +27,7 @@ $(document).ready(function () {
 			} else if(direction == 'up'){
 				bottomKey();
 			}
-		}, threshold: 100
+		}, threshold: 250
 	});
 
 	parallax.add($("#home"))

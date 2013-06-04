@@ -1,20 +1,8 @@
 /* ----- RESET ----- */
 *{outline: 0;padding: 0;margin: 0;border: 0;}
-body,p,ul,ol,dl,textarea,input {font-family: 'LeagueGothic'; font-size:25px;}
 
 /* ----- FONTS ----- */
-@font-face { font-family: 'LeagueGothic';  src:url('../assets/LeagueGothic.otf'); }
-@font-face { font-family: 'Chunk';         src:url('fonts/Chunk.otf'); }
-@font-face { font-family: 'Raleway';       src:url('fonts/Raleway.otf'); }
-@font-face { font-family: 'Sniglet';       src:url('fonts/Sniglet.otf'); }
 
-.leaguegothic{font-family:'LeagueGothic'; }
-.chunk       {font-family:'Chunk'; }
-.raleway     {font-family:'Raleway'; }
-.sniglet     {font-family:'Sniglet'; }
-.helvetica   {font-family:"Helvetica Neue", Helvetica,Arial, sans-serif;}
-.calibri     {font-family:Calibri;}
-.code        {font-family:"Courier New",Courier,monospace;}
 
 /* ----- BLUEPRINT ----- */
   /* container_width/#divisions - margin */
@@ -117,12 +105,6 @@ body,p,ul,ol,dl,textarea,input {font-family: 'LeagueGothic'; font-size:25px;}
 .tiltleft { -webkit-transform: rotate(-25deg);-moz-transform: rotate(-25deg);-ms-transform: rotate(-25deg);-o-transform: rotate(-25deg);transform: rotate(-25deg);zoom: 1;}
 .rotate90 { -webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);zoom: 1;}
 .rotate270{ -webkit-transform: rotate(270deg);-moz-transform: rotate(270deg);-ms-transform: rotate(270deg);-o-transform: rotate(270deg);transform: rotate(270deg);zoom: 1;}
-
-.noise{background-image:url('images/noise.png');}
-.dust{background-image:url('images/dust.png');}
-.fabric{background-image:url('images/canvas.png');}
-.vignette{}
-/* look at https://gist.github.com/1387878*/
 
 /* ---- PAGE DECORATION ---- */
 .topbar   { top:0px;width:100%;position:fixed; z-index:100;}

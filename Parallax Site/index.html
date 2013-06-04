@@ -14,9 +14,10 @@
             <script type="text/javascript" src="Javascript/jq.js"></script>
             <script type="text/javascript" src="Javascript/jquery.touchSwipe.min.js"></script>
             <script type="text/javascript" src="Javascript/parallax.js"></script>
-            <script type="text/javascript" src="Javascript/index.js"></script>            
+            <script type="text/javascript" src="Javascript/index.js"></script>  
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
     		<script type="text/javascript" src="Javascript/googleMap.js"></script>
+    		<script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0"></script>
             
         </head>
 
@@ -24,7 +25,10 @@
 
         	<div id="header">
         		<img src="Images/header.gif"/>
-        	</div>s
+        	</div>
+        	<div id="headerRight">
+        		Login | Logout
+        	</div>
         	<div id="container">
         		<!-- Home div in the slide. Position center
         			Left: Social div
@@ -500,41 +504,19 @@
         			you can return from navigation to where you were
         			Down: Whereever you came from -->
         		<div id="homeNav">
-        			<div id="contentContainer">
+        			<div id="navContentContainer">
         				<div id="navLinksBar">
-        					<ui>
-        						<li><a href="#home">Home</a></li>
-        						<li><a href="#map">Map</a></li>
-        						<li><a href="#community">Community</a></li>
-        						<li><a href="#profileHome">Profile Home</a></li>
-        						<li><a href="#profileEdit">Profile Edit</a></li>
-        					</ul>
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a href="#home" class="navLinks">Home</a></li>
+	        						<li class="navListItem"><a href="#map" class="navLinks">Map</a></li>
+	        						<li class="navListItem"><a href="#community" class="navLinks">Community</a></li>
+	        						<li class="navListItem"><a href="#profileHome" class="navLinks">Profile Home</a></li>
+	        						<li class="navListItem"><a href="#profileEdit" class="navLinks">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
         				</div>
-        				<div id="searchContainer">				            
-			                <!--<form method="get" action="#results" id="styledSearchBox" id="searchbox_015632362458750749219:lws8bshesim" >
-							  <div>
-							    <input type="hidden" name="cx" value="015632362458750749219:lws8bshesim" />
-							    <input type="hidden" name="ie" value="UTF-8" />
-							    <input type="text" name="q" size="15" placeholder="Search..."/>
-							  </div>
-							</form>
-			    			<br>
-				    		<div id="searchResults">
-				    			<a name="results"></a>
-								<script>
-								  (function() {
-								    var cx = '015632362458750749219:lws8bshesim';
-								    var gcse = document.createElement('script');
-								    gcse.type = 'text/javascript';
-								    gcse.async = true;
-								    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-								        '//www.google.com/cse/cse.js?cx=' + cx;
-								    var s = document.getElementsByTagName('script')[0];
-								    s.parentNode.insertBefore(gcse, s);
-								  })();
-								</script>
-								<gcse:searchresults-only></gcse:searchresults-only>
-	        				</div>-->
+        				<div id="searchContainer">
 	        				<script>
 							  (function() {
 							    var cx = '015632362458750749219:lws8bshesim';
@@ -545,7 +527,7 @@
 							        '//www.google.com/cse/cse.js?cx=' + cx;
 							    var s = document.getElementsByTagName('script')[0];
 							    s.parentNode.insertBefore(gcse, s);
-							    })();
+							  })();
 							</script>
 							<gcse:search></gcse:search>
 	        			</div>
@@ -564,19 +546,8 @@
 							</form>
 			    		</div>
 			    		<div id="searchResults">
-							<script>
-							  (function() {
-							    var cx = '015632362458750749219:lws8bshesim';
-							    var gcse = document.createElement('script');
-							    gcse.type = 'text/javascript';
-							    gcse.async = true;
-							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-							        '//www.google.com/cse/cse.js?cx=' + cx;
-							    var s = document.getElementsByTagName('script')[0];
-							    s.parentNode.insertBefore(gcse, s);
-							  })();
-							</script>
-							<gcse:searchresults-only></gcse:searchresults-only>
+							
+							
         				</div>
         			</div>
         		</div>

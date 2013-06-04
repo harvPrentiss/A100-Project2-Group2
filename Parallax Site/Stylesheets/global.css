@@ -3,11 +3,17 @@ html
 	height: 100%;
 }
 
+@font-face
+{
+	font-family: Cousine;
+	src: url(../Font/cousineReg.ttf);
+}
+
 body
 {
 	background: url(../Images/Untitled-12.jpg) #bbbbbb;
 	color: #222222;
-	font-family: sans-serif;
+	font-family: Cousine;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -18,6 +24,18 @@ body
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+#headerRight 
+{
+	position: absolute;
+	top: 0;
+	right: 5px;
+	background: #96bf49;
+	color: #d9e78f;
+	font-size: 16pt;
+	padding: 5px;
+
 }
 
 /* Parallax Naviagtion */ 
@@ -63,9 +81,15 @@ body
 /* Holds all content inside each div section */
 #contentContainer
 {
-	background: transparent;
 	width: 90%;
 	margin: 100px 80px 10px 80px;
+	height: 95%;
+}
+
+#navContentContainer
+{
+	width: 100%;
+	margin: 100px 10px 100px 10px;
 	height: 95%;
 }
 
@@ -86,6 +110,7 @@ body
 	width: 48%;
 	margin-left: 10px;
 	border: 1px solid black;
+	background: rgba(255, 255, 255, 0.6);
 }
 
 #newMembers
@@ -94,6 +119,7 @@ body
 	width: 48%;
 	margin-right: 10px;
 	border: 1px solid black;
+	background: rgba(255, 255, 255, 0.6);
 }
 
 #twitterBox
@@ -115,14 +141,51 @@ body
 
 #navLinksBar
 {
+	font-size: 18pt;
 	float: left;
-	width: 15%;
+	width: 14%;
+	margin-right: 5px;
+}
+
+#navBox
+{
+	background-color: rgba(150, 191, 73, .5);
+	width: 185px;
+}
+
+.navList 
+{
+	list-style: none;
+	padding: 5px;
+}
+
+.navListItem
+{
+	padding: 5px;
+	margin: 5px 0px;
+}
+
+a.navLinks
+{
+	color: #96bf49;
+}
+
+a.navLinks:visited
+{	
+	color: #96bf49;
+}
+
+a.navLinks:hover
+{	
+	color: #d9e78f;
 }
 
 #searchContainer
 {
-	float: right;
-	width: 85%;
+	float: left;
+	width: 83%;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #map
@@ -182,63 +245,6 @@ body
    color: #333333; 
    font-style: italic; 
    font-size: 8pt;
-}
-
-
-/* Search box don't change this except for colors */
-#styledSearchBox
-{
-	display: block;
-	float: right;
-	width: 25%;
-}
-
-#styledSearchBox input[type="text"] 
-{
-    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
-    border: 0 none;
-    font: bold 12px Arial,Helvetica,Sans-serif;
-    color: #d7d7d7;
-    width:70%;
-    padding: 6px 15px 6px 35px;
-    border: 2px solid #236B8E;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    
-    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-    -webkit-transition: all 0.7s ease 0s;
-    -moz-transition: all 0.7s ease 0s;
-    -o-transition: all 0.7s ease 0s;
-    transition: all 0.7s ease 0s;
-}
- 
-#styledSearchBox input[type="text"]:focus 
-{
-    background: url(../Images/search-light.png) no-repeat 10px 6px #fcfcfc;
-    color: #000000;
-    width: 80%;
-    outline: 0;
-}
-
-#styledSearchBox input::-webkit-input-placeholder
-{
-	color: #6a6f75;
-	font-style: italic;
-}
-
-#styledSearchBox input::-moz-input-placeholder
-{
-	color: #6a6f75;
-	font-style: italic;
-}
-
-#styledSearchBox input:-ms-input-placeholder
-{
-	color: #6a6f75;
-	font-style: italic;
 }
 
 /* The about section CSS  */

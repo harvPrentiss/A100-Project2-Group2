@@ -27,7 +27,7 @@ $(document).ready(function () {
 			} else if(direction == 'up'){
 				bottomKey();
 			}
-		}, threshold: 0
+		}, threshold: 100
 	});
 
 	parallax.add($("#home"))
@@ -179,3 +179,23 @@ $(document).ready(function () {
 	parallax.home.show();
 
 });
+
+function parallaxRedirection(e)
+{
+	parallax.current.hide();
+	if(e.name == "map"){
+		parallax.map.show();
+	}
+	if(e.name == "home"){
+		parallax.home.show();
+	}
+	if(e.name == "twitter"){
+		parallax.twitter.show();
+	}
+	if(e.name == "profileHome"){
+		parallax.profileHome.show();
+	}
+	if(e.name == "profileEdit"){
+		parallax.profileEdit.show();
+	}
+}

@@ -74,6 +74,9 @@ var parallaxPage = function(name, pageHtml){
 			this.makeCurrent();
 			this.page.css("display", "block");
 			this.page.css(newLocation);
+			if(this.key == 'map'){
+				google.maps.event.trigger($("#googleMap")[0], 'resize');
+			}
 			return this;
 		},
 

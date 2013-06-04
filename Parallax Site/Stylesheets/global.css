@@ -220,17 +220,13 @@ body
 	margin: 5px 0px;
 }
 
-a.navLinks
+#navLinkBtn
 {
 	color: #96bf49;
+	border: none;
 }
 
-a.navLinks:visited
-{	
-	color: #96bf49;
-}
-
-a.navLinks:hover
+#navLinkBtn:hover
 {	
 	color: #d9e78f;
 }

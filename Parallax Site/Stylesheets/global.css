@@ -11,7 +11,7 @@ html
 
 body
 {
-	background: url(../Images/Untitled-12.jpg) #bbbbbb;
+	background: url(../Images/ITWORKS.jpg) #bbbbbb;
 	color: #222222;
 	font-family: Cousine;
 	margin: 0;
@@ -42,12 +42,26 @@ body
 
 #rightControl{
 	right:0px;
-	top:40%;
+	top:45%;
 }
 
 #leftControl{
 	left:0px;
-	top:40%;
+	top:45%;
+}
+
+#leftControlText
+{
+	position: fixed;
+	top: 33%;
+	left: 0px;
+}
+
+#rightControlText
+{
+	position: fixed;
+	top: 33%;
+	right: 0px;
 }
 
 .arrow{
@@ -56,18 +70,59 @@ body
 
 /* Arrow text */
 .dirText{
-	color:white;
-	font-size:20px;
-	margin-top:45px;
+	color: #d9e78f;
+	font-size:18pt;
 	opacity:0.0;
 }
 
 .control{
 	position:fixed;
-	width:170px;
+	width:120px;
+	height: 120px;
 	cursor:pointer;
 }
 
+.counterClockwiseRotate 
+{
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+
+	/* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	/* Should be unset in IE9+ I think. */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	top: 20px;
+}
+
+.clockwiseRotate 
+{
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+
+	/* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+
+	/* Should be unset in IE9+ I think. */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+	top: 20px;
+}
 /* End Parallax navigation */
 
 /*Container for the page */
@@ -81,8 +136,8 @@ body
 /* Holds all content inside each div section */
 #contentContainer
 {
-	width: 90%;
-	margin: 100px 80px 10px 80px;
+	width: 85%;
+	margin: 100px 90px 10px 90px;
 	height: 95%;
 }
 
@@ -149,7 +204,7 @@ body
 
 #navBox
 {
-	background-color: rgba(150, 191, 73, .5);
+	background: rgba(10, 10, 10, 0.8);
 	width: 185px;
 }
 
@@ -216,9 +271,22 @@ a.navLinks:hover
 {
 	width: 25%;
 	float: right;
+	background: rgba(255, 255, 255, 0.6);
 }
 
+#profileHomeBox
+{
+	width: 100%;
+	float: left;
+	background: rgba(255, 255, 255, 0.6);
+}
 
+#profileEditBox
+{
+	width: 100%;
+	float: left;
+	background: rgba(255, 255, 255, 0.6);
+}
 
 ::-webkit-input-placeholder 
 {

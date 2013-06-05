@@ -40,12 +40,14 @@ body
 
 /* Parallax Naviagtion */ 
 
-#rightControl{
+#rightControl
+{
 	right:0px;
 	top:45%;
 }
 
-#leftControl{
+#leftControl
+{
 	left:0px;
 	top:45%;
 }
@@ -64,18 +66,23 @@ body
 	right: 0px;
 }
 
-.arrow{
+.arrow
+{
+	display: block;
 	opacity:0.2;
+	margin: 0px: auto;
 }
 
 /* Arrow text */
-.dirText{
+.dirText
+{
 	color: #96BF49;
 	font-size:14pt;
 	opacity:0.0;
 }
 
-.control{
+.control
+{
 	position:fixed;
 	width:120px;
 	height: 120px;
@@ -234,11 +241,21 @@ body
 
 #searchContainer
 {
-	float: left;
-	width: 83%;
-	margin-left: 10px;
-	margin-right: 5px;
+	float: right;
+	width: 75%;
+	margin-right: 20px;
 	padding: 5px;
+}
+
+#styleSelectionBox
+{
+	width:190px;
+	background: rgba(10, 10, 10, 0.6);
+}
+
+#styleSelectionBox a
+{
+	text-decoration: none;
 }
 
 #map

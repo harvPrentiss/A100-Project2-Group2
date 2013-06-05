@@ -53,7 +53,7 @@ $(document).ready(function () {
 	//Setting up page navigation
 	parallax.home.onload=function(){
 		setTop("homeNav", "Navigation");
-		setRight("twitter", "Community");
+		setRight("twitter", "Social");
 		setLeft("profileHome","Profile");
 	};
 
@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 	parallax.map.onload=function(){
 		setTop("mapNav", "Navigation");
-		setLeft("twitter", "Community");
+		setLeft("twitter", "Social");
 	};
 
 	parallax.profileHome.onload=function(){
@@ -84,7 +84,7 @@ $(document).ready(function () {
 	};
 
 	parallax.twitterNav.onload=function(){
-		setBottom("twitter", "Community");
+		setBottom("twitter", "Social");
 	};
 
 	parallax.mapNav.onload=function(){

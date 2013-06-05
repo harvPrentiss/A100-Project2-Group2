@@ -1,0 +1,697 @@
+ <!doctype html>
+
+<html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Startup Guild</title>
+            <link rel="Stylesheet" type="text/css" href="Stylesheets/xo.css" /> <!-- THIS MUST BE FIRST -->
+
+            <!-- Stylesheets -->
+            <link rel ="stylesheet" href="Stylesheets/global.css">
+            <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+
+            <!-- Scripts -->
+            <script type="text/javascript" src="Javascript/jq.js"></script>
+            <script type="text/javascript" src="Javascript/jquery.touchSwipe.min.js"></script>
+            <script type="text/javascript" src="Javascript/parallax.js"></script>
+            <script type="text/javascript" src="Javascript/index.js"></script>  
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
+    		<script type="text/javascript" src="Javascript/googleMap.js"></script>
+    		<script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0"></script>
+            
+        </head>
+
+        <body>
+
+        	<div id="header">
+        		<img src="Images/header.gif"/>
+        	</div>
+        	<div id="headerRight">
+        		Login | Logout
+        	</div>
+        	<div id="container">
+        		<!-- Home div in the slide. Position center
+        			Left: Social div
+        			Down: Map div
+        			Right: Tile div -->
+        		<div id="home">
+        			<div id="contentContainer">
+	        			<div id="tileBox">
+        					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+								<div class="flipper">
+									<div class="front">
+										<!-- front content -->
+										<img src="Images/wayne-enterprises.jpg"/>
+									</div>
+									<div class="back">
+										<!-- back content -->
+										<a href="#">Wayne Enterprises</a><br>
+					            		Location: Gotham City<br><br>
+					            		Field: Conglomerate<br><br>
+					            		"We are Gotham."<br><br>
+					            		<div class="profileLinks">
+					            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/>
+					            		</div>
+									</div>
+								</div>
+							</div>
+
+						
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/lexCorp.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Lex Corp</a><br>
+				            		Location: Metropolis<br><br>
+				            		Field: Conglomerate<br><br>
+				            		"We make things grow."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/>
+				            		</div>
+				        		</div>				       			
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/tonyStark.jpg"/>
+				    			</div>
+								<div class="back">
+									<!-- back content -->
+				            		<a href="#">Tony Stark</a><br>
+				            		Location: New York<br><br>
+				            		Field: Superhero<br><br>
+				            		"I am Iron Man."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/A100.png"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">A100</a><br>
+				            		Location: New Haven<br><br>
+				            		Field: Coding<br><br>
+				            		"Code to live by."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/gordonFreeman.jpg"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">Gordon Freeman</a><br>
+				            		Location: City 17<br><br>
+				            		Field: Physics<br><br>
+				            		"......"<br><br>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/harvPrentiss.jpg"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">Harv Prentiss</a><br>
+				            		Location: North Haven<br><br>
+				            		Field: Genius<br><br>
+				            		"I can do anything."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/derekKoch.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Derek Koch</a><br>
+				            		Location: Everywhere<br><br>
+				            		Field: Leader<br><br>
+				            		"I'm awesome."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/krishna.jpg"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Krishna Sampath</a><br>
+				            		Location: Everywhere<br><br>
+				            		Field: Everything<br><br>
+				            		"I'm awesome too."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/Melanie.jpg"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Melanie Rice</a><br>
+				            		Location: Somewhere<br><br>
+				            		Field: Coding & Design<br><br>
+				            		"I'm awesome as well."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/klay.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Klayton Wald</a><br>
+				            		Location: Somewhere<br><br>
+				            		Field: Art Direction<br><br>
+				            		"I'm in a death metal band."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/katelyn.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Katelyn Anton</a><br>
+				            		Location: Somewhere<br><br>
+				            		Field: Community<br><br>
+				            		"I bring light to a dark world."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/utibe.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Utibeabasi Udo-Akon</a><br>
+				            		Location: Nowhere<br><br>
+				            		Field: Coding<br><br>
+				            		"I am a shadow."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/wenbin.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Wenbin Zhang</a><br>
+				            		Location: Somewhere<br><br>
+				            		Field: Software<br><br>
+				            		"They call me "Magic"."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/independentSoftware.jpg"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">Independent Software</a><br>
+				            		Location: New Haven<br><br>
+				            		Field: Software Development<br><br>
+				            		"Envision It. Build It."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/james.jpg"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">James Roberts</a><br>
+				            		Location: Somewhere<br><br>
+				            		Field: Software Dev<br><br>
+				            		"Hi. I'm James."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/seeclickFix.png"/>
+				    			</div>
+				    			<div class="back">
+									<!-- back content -->
+				            		<a href="#">SeeClickFix</a><br>
+				            		Location: New Haven<br><br>
+				            		Field: Fixing<br><br>
+				            		"See it. Click it. Fix it."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/vBrick.png"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">VBrick</a><br>
+				            		Location: Wallingford<br><br>
+				            		Field: IP Video<br><br>
+				            		"The leader in enterprise video."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/ikonisys.png"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">Ikonisys</a><br>
+				            		Location: New Haven<br><br>
+				            		Field: Science<br><br>
+				            		"Finding Cells That Matter."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/darthVader.jpg"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">Darth Vader</a><br>
+				            		Location: Coruscant<br><br>
+				            		Field: Lord of The Sith<br><br>
+				            		"I find your lack of faith in startups disturbing."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+
+						<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- front content -->
+				        		<img src="Images/google.png"/>
+				    		</div>
+				    		<div class="back">
+									<!-- back content -->
+				            		<a href="#">Google</a><br>
+				            		Location: California<br><br>
+				            		Field: Technology<br><br>
+				            		"We're a small startup trying to make it big."<br><br>
+				            		<div class="profileLinks">
+				            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+				            			<a href="#"><img src="Images/twitterLogo.png"/></a>
+				            			<a href="#"><img src="Images/facebookIcon.png"/></a>
+				            		</div>
+				        		</div>
+				    		</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+
+        		<!-- Map div that will be the far right div
+        			Left: Twitter div
+        			Up: Navigation -->
+        		<div id="map">
+        			<div id="contentContainer">
+        				<div id="mapBox">
+        					<div id="googleMap"></div>
+        				</div>
+        				<div id="filtersBox">
+        					Filters
+        				</div>
+        			</div>
+        		</div>
+
+        		<!-- Twitter div will be to the right
+        			Left: Home
+        			Right: Map
+        			Up: Navigation -->
+        		<div id="twitter">
+        			<div id="contentContainer">
+        				<div id="newsContainer">
+			        		<div id="recentJobs">
+			        			Recent Jobs
+			        			<br>
+			        			This is where recent job postings will. they will be in list format.
+			        		</div>
+			        		<div id="newMembers">
+			        			New Members
+			        			<br>
+			        			This will be a list of new members to the site done in list format.
+			        		</div>
+		                </div>
+		                <div id="twitterBox">
+		                	<a class="twitter-timeline" height="400" border-color="#000000"  data-theme="light" href="https://twitter.com/HarvardP" data-widget-id="339555100131475456">Tweets by @CodeA100</a>
+			                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			            </div>
+		            </div>
+        		</div>
+
+        		<!-- Profile div will be to the left
+        			Left: Profile Edit
+        			Right: Home
+        			Up: Navigation -->
+        		<div id="profileHome">
+        			<div id="contentContainer">
+        				<div id="profileHomeBox">
+        					Profile Home
+        				</div>
+        			</div>
+        		</div>
+
+
+				<!-- ProfileEdit div will be to the right
+        			Right: Profile
+        			Up: Navigation -->
+        		<div id="profileEdit">
+        			<div id="contentContainer">
+        				<div id="profileEditBox">
+        					Profile Edit
+        				</div> 
+        			</div>
+        		</div>
+
+        		<!-- Navigation div will be up each section needs it's own navigation div so 
+        			you can return from navigation to where you were
+        			Down: Whereever you came from -->
+        		<div id="homeNav">
+        			<div id="navContentContainer">
+        				<div id="navLinksBar">
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
+	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
+	        						<li class="navListItem"><a name="twitter" id="navLinkBtn" onclick="parallaxRedirection(this);">Community</a></li>
+	        						<li class="navListItem"><a name="profileHome" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Home</a></li>
+	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
+        				</div>
+        				<div id="searchContainer">
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        		<div id="twitterNav">
+        			<div id="navContentContainer">
+        				<div id="navLinksBar">
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
+	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
+	        						<li class="navListItem"><a name="twitter" id="navLinkBtn" onclick="parallaxRedirection(this);">Community</a></li>
+	        						<li class="navListItem"><a name="profileHome" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Home</a></li>
+	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
+        				</div>
+        				<div id="searchContainer">
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        		<div id="mapNav">
+        			<div id="navContentContainer">
+        				<div id="navLinksBar">
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
+	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
+	        						<li class="navListItem"><a name="twitter" id="navLinkBtn" onclick="parallaxRedirection(this);">Community</a></li>
+	        						<li class="navListItem"><a name="profileHome" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Home</a></li>
+	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
+        				</div>
+        				<div id="searchContainer">
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        		<div id="proHomeNav">
+        			<div id="navContentContainer">
+        				<div id="navLinksBar">
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
+	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
+	        						<li class="navListItem"><a name="twitter" id="navLinkBtn" onclick="parallaxRedirection(this);">Community</a></li>
+	        						<li class="navListItem"><a name="profileHome" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Home</a></li>
+	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
+        				</div>
+        				<div id="searchContainer">
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        		<div id="proEditNav">
+        			<div id="navContentContainer">
+        				<div id="navLinksBar">
+        					<div id="navBox">
+	        					<ui class="navList">
+	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
+	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
+	        						<li class="navListItem"><a name="twitter" id="navLinkBtn" onclick="parallaxRedirection(this);">Community</a></li>
+	        						<li class="navListItem"><a name="profileHome" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Home</a></li>
+	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
+	        					</ul>
+	        				</div>
+        				</div>
+        				<div id="searchContainer">
+	        				<script>
+							  (function() {
+							    var cx = '015632362458750749219:lws8bshesim';
+							    var gcse = document.createElement('script');
+							    gcse.type = 'text/javascript';
+							    gcse.async = true;
+							    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+							        '//www.google.com/cse/cse.js?cx=' + cx;
+							    var s = document.getElementsByTagName('script')[0];
+							    s.parentNode.insertBefore(gcse, s);
+							  })();
+							</script>
+							<gcse:search></gcse:search>
+	        			</div>
+        			</div>
+        		</div>
+
+        	<!-- Navigational arrows. These don't chnage except for the image and width -->
+        	
+        	<div id="leftControl" class="control">
+				<img id="leftArrow" class="arrow" style="width:50px" src="Images/leftarrow.gif"></img>
+				<div id="leftControlText" class="counterClockwiseRotate">
+        			<div id="leftText" class="dirText">Test</div>
+        		</div>
+			</div>
+
+			<div id="rightControl" class="control">
+				<div id="rightControlText" class="clockwiseRotate">
+					<div id="rightText" class="dirText">Test</div>
+				</div>
+				<img id="rightArrow" class="arrow right" style="width:50px" src="Images/rightarrow.gif"></img>
+				
+			</div>
+
+			<div id="topControl" class="control center" style="width:120px;left:45%;">
+				<img id="topArrow" class="arrow" style="height:50px" src="Images/uparrow.gif"></img>
+				<div id="topText" class="dirText txtcenter" > Test</div>
+			</div>
+
+			<div id="bottomControl" class="control center" style="width:120px;left:45%;bottom:0px;">
+				<div id="bottomText" class="dirText txtcenter"> Test</div>
+				<img id="bottomArrow" class="arrow" style="height:50px" src="Images/downarrow.gif"></img>
+
+			</div>
+		</div>
+        
+        	
+        </body>
+
+</html>

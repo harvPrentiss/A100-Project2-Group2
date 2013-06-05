@@ -11,9 +11,9 @@ html
 
 body
 {
-	background: url(../Images/ugly.jpg) #bbbbbb;
+	background: url(../Images/GREY.jpg) #bbbbbb;
 	color: #222222;
-	font-family: Cousine;
+	font-family: Helvetica, arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -24,6 +24,19 @@ body
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+#headerBox
+{
+	max-width: 100%;
+	min-width:45%;
+}
+
+.headerImage
+{
+	content: url(../Images/headerGreen.gif);
+	width:100%;
+	height:100%;
 }
 
 #headerRight 
@@ -79,14 +92,25 @@ body
 	color: #96BF49;
 	font-size:14pt;
 	opacity:0.0;
+	text-align: center;
 }
 
 .control
 {
 	position:fixed;
-	width:120px;
-	height: 120px;
 	cursor:pointer;
+}
+
+.topBot
+{
+	width:90px;
+	height: 60px;
+}
+
+.side
+{
+	width:60px;
+	height: 90px;
 }
 
 .counterClockwiseRotate 
@@ -98,11 +122,11 @@ body
 	transform: rotate(-90deg);
 
 	/* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 45% 45%;
+	-moz-transform-origin: 45% 45%;
+	-ms-transform-origin: 45% 45%;
+	-o-transform-origin: 45% 45%;
+	transform-origin: 45% 45%;
 
 	/* Should be unset in IE9+ I think. */
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
@@ -119,11 +143,11 @@ body
 	transform: rotate(90deg);
 
 	/* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	-ms-transform-origin: 50% 50%;
-	-o-transform-origin: 50% 50%;
-	transform-origin: 50% 50%;
+	-webkit-transform-origin: 45% 45%;
+	-moz-transform-origin: 45% 45%;
+	-ms-transform-origin: 45% 45%;
+	-o-transform-origin: 45% 45%;
+	transform-origin: 45% 45%;
 
 	/* Should be unset in IE9+ I think. */
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
@@ -163,32 +187,32 @@ body
 #newsContainer
 {
 	float:left;
-	width: 75%;
+	width: 70%;
 }
 
 #recentJobs
 {
 	float:left;
-	width: 48%;
-	margin-left: 10px;
+	width: 45%;
+	margin: 0px 10px;
 	border: 1px solid black;
 	background: rgba(255, 255, 255, 0.6);
 }
 
 #newMembers
 {
-	float:right;
-	width: 48%;
-	margin-right: 10px;
+	float:left;
+	width: 45%;
+	margin: 0px 10px;
 	border: 1px solid black;
 	background: rgba(255, 255, 255, 0.6);
 }
 
 #twitterBox
 {
-	float:right;
-	width: 25%;
-	min-width: 250px;
+	float:left;
+	width: 28%;
+	min-width: 245px;
 	margin: 0px auto;
 }
 
@@ -204,7 +228,7 @@ body
 
 #navLinksBar
 {
-	font-size: 18pt;
+	font-size: 16pt;
 	float: left;
 	width: 14%;
 	margin-right: 5px;
@@ -213,19 +237,19 @@ body
 #navBox
 {
 	background: rgba(10, 10, 10, 0.6);
-	width: 190px;
+	min-width: 190px;
+	padding: 5px;
 }
 
 .navList 
 {
 	list-style: none;
-	padding: 5px;
 }
 
 .navListItem
 {
-	padding: 5px;
-	margin: 5px 0px;
+	padding: 2px;
+	margin: 2px 0px;
 }
 
 #navLinkBtn
@@ -241,15 +265,16 @@ body
 
 #searchContainer
 {
-	float: right;
-	width: 75%;
-	margin-right: 20px;
-	padding: 5px;
+	float: left;
+	width: 80%;
+	margin:0px 20px;
+	padding: 10px;
 }
 
 #styleSelectionBox
 {
-	width:190px;
+	min-width:190px;
+	padding: 5px;
 	background: rgba(10, 10, 10, 0.6);
 }
 
@@ -278,8 +303,8 @@ body
 	bottom: 5px;
 	right: 5px;
 	border: 2px solid #236B8E;
-	max-height: 550px;
-	min-height: 550px;
+	max-height: 545px;
+	min-height: 545px;
 }
 
 #filtersBox
@@ -330,33 +355,73 @@ body
    font-size: 8pt;
 }
 
-/* The about section CSS  */
-.quote
+.arrow-right
 {
-	font-style: italic;
-	font-size: 16pt;
+	width: 0;
+	height: 0;
+	border-top: 45px solid transparent;
+	border-bottom: 45px solid transparent;
+	border-left: 45px solid #96bf49;
+}
+
+.arrow-left
+{
+	width: 0;
+	height: 0;
+	border-top: 45px solid transparent;
+	border-bottom: 45px solid transparent;
+	border-right: 45px solid #96bf49;
+}
+
+.arrow-down
+{
+	width: 0;
+	height: 0;
+	border-top: 45px solid #96bf49;
+	border-right: 45px solid transparent;
+	border-left: 45px solid transparent;
+}
+
+.arrow-up
+{
+	width: 0;
+	height: 0;
+	border-right: 45px solid transparent;
+	border-left: 45px solid transparent;
+	border-bottom: 45px solid #96bf49;
+}
+
+#styleLine
+{
+	color: #000000;
+	width: 100%;
+	margin: 5px 0px;
 	text-align: center;
 }
 
-.aboutHeader
+#styleLine:hover
 {
-	font-size: 18pt;
-	font-weight: bold;
-	font-style: italic;
+	color: #444444;
 }
 
-.aboutList
+.green 
 {
-	font-size: 14pt;
-	text-decoration: none;
-	font-weight: normal;
-	font-style: normal;
+	background: #96BF49;
 }
 
-.aboutText
+.blue
 {
-	font-size: 14pt;
-	text-indent: 25px;
-	margin-left: 20px;
+	background: #8EE5E2;
 }
 
+.orange
+{
+	background: #F9993E;
+}
+
+.navHeadings
+{
+	font-size: 16pt;
+	text-align: center;
+	color: #CCCCCC;
+}

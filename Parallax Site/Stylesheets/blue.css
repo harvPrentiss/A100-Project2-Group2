@@ -1,0 +1,46 @@
+@import url(global.css);
+
+/*  Dark Blue: #8EE5E2 
+	Light Blue: #49A9BC
+*/
+
+#headerRight 
+{
+	background: #49A9BC;
+	color: #8EE5E2;
+}
+
+.dirText
+{
+	color: #8EE5E2;
+}
+
+#navLinkBtn
+{
+	color: #49A9BC;
+}
+
+#navLinkBtn:hover
+{	
+	color: #8EE5E2;
+}
+
+.arrow-right
+{
+	border-left: 45px solid #8EE5E2;
+}
+
+.arrow-left
+{
+	border-right: 45px solid #8EE5E2;
+}
+
+.arrow-down
+{
+	border-top: 45px solid #8EE5E2;
+}
+
+.arrow-up
+{
+	border-bottom: 45px solid #8EE5E2;
+}

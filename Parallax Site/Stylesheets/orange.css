@@ -1,0 +1,42 @@
+@import url(global.css);
+
+#headerRight 
+{
+	background: #E57A10;
+	color: #FFBE82;
+}
+
+.dirText
+{
+	color: #E57A10;
+}
+
+#navLinkBtn
+{
+	color: #E57A10;
+}
+
+#navLinkBtn:hover
+{	
+	color: #FFBE82;
+}
+
+.arrow-right
+{
+	border-left: 45px solid #E57A10;
+}
+
+.arrow-left
+{
+	border-right: 45px solid #E57A10;
+}
+
+.arrow-down
+{
+	border-top: 45px solid #E57A10;
+}
+
+.arrow-up
+{
+	border-bottom: 45px solid #E57A10;
+}

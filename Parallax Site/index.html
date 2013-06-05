@@ -4,12 +4,14 @@
         <head>
             <meta charset="UTF-8">
             <title>Startup Guild</title>
-            <link rel="Stylesheet" type="text/css" href="Stylesheets/xo.css" /> <!-- THIS MUST BE FIRST -->
+            <link rel="stylesheet" type="text/css" href="Stylesheets/xo.css" /> <!-- THIS MUST BE FIRST -->
 
             <!-- Stylesheets -->
-            <link rel ="stylesheet" href="Stylesheets/global.css">
-            <link rel ="stylesheet" href="Stylesheets/profileTile.css">
 
+            <link rel ="stylesheet" href="Stylesheets/profileTile.css">
+            <link rel ="stylesheet" href="Stylesheets/global.css">
+            <link rel="alternate stylesheet" title="blue" href="Stylesheets/blue.css">
+            <link rel="alternate stylesheet" title="orange" href="Stylesheets/orange.css">
             <!-- Scripts -->
             <script type="text/javascript" src="Javascript/jq.js"></script>
             <script type="text/javascript" src="Javascript/jquery.touchSwipe.min.js"></script>
@@ -18,13 +20,16 @@
             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtWqCzy7fFLp6laU5rvYK8TszeaNYMIEg&sensor=true"></script>    	
     		<script type="text/javascript" src="Javascript/googleMap.js"></script>
     		<script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0"></script>
+    		<script type="text/javascript" src="Javascript/styleswitch.js"></script>
             
         </head>
 
         <body>
 
         	<div id="header">
-        		<img src="Images/header.gif"/>
+        		<div id="headerBox">
+        			<img class="headerImage"/>
+        		</div>
         	</div>
         	<div id="headerRight">
         		Login | Logout
@@ -511,6 +516,7 @@
         			<div id="navContentContainer">
         				<div id="navLinksBar">
         					<div id="navBox">
+        						<h1 class="navHeadings">Links</h1>
 	        					<ui class="navList">
 	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
 	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
@@ -521,12 +527,16 @@
 	        				</div>
 	        				<br>
 	        				<div id="styleSelectionBox">
-        					<a href="styleChanger.php?style=green" style="color:green;">Green</a>
-        					<br>
-        					<a href="styleChanger.php?style=orange" style="color:orange;">Orange</a>
-        					<br>
-        					<a href="styleChanger.php?style=blue" style="color:blue;">Blue</a>
-        					<br>
+	        					<h1 class="navHeadings">Color Theme</h1>
+	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
+	        						<div id="styleLine" class="green">Green</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('blue', 999)">
+	        						<div id="styleLine" class="blue">Blue</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('orange', 999)">
+	        						<div id="styleLine" class="orange">Orange</div>
+								</a>
         					</div>
         				</div>
         				<div id="searchContainer">
@@ -673,29 +683,29 @@
 
         	<!-- Navigational arrows. These don't chnage except for the image and width -->
         	
-        	<div id="leftControl" class="control">
-				<img id="leftArrow" class="arrow" style="width:50px" src="Images/leftarrow.gif"></img>
+        	<div id="leftControl" class="control side">
+				<div id="leftArrow" class="arrow-left arrow"></div>
 				<div id="leftControlText" class="counterClockwiseRotate">
         			<div id="leftText" class="dirText">Test</div>
         		</div>
 			</div>
 
-			<div id="rightControl" class="control">
+			<div id="rightControl" class="control side">
 				<div id="rightControlText" class="clockwiseRotate">
 					<div id="rightText" class="dirText">Test</div>
 				</div>
-				<img id="rightArrow" class="arrow right" style="width:50px" src="Images/rightarrow.gif"></img>
+				<div id="rightArrow" class="arrow-right arrow"></div>
 				
 			</div>
 
-			<div id="topControl" class="control center" style="width:90px;left:45%;">
-				<img id="topArrow" class="arrow" style="height:50px" src="Images/uparrow.gif"></img>
+			<div id="topControl" class="control center topBot" style="left:45%; top:0px;">
+				<div id="topArrow" class="arrow-up arrow"></div>
 				<div id="topText" class="dirText" > Test</div>
 			</div>
 
-			<div id="bottomControl" class="control center" style="width:90px;left:45%;bottom:0px;">
+			<div id="bottomControl" class="control center topBot" style="left:45%;bottom:10px;">
 				<div id="bottomText" class="dirText"> Test</div>
-				<img id="bottomArrow" class="arrow" style="height:50px" src="Images/downarrow.gif"></img>
+				<div id="bottomArrow" class="arrow-down arrow"></div>
 
 			</div>
 		</div>

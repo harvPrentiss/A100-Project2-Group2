@@ -40,3 +40,18 @@
 {
 	border-bottom: 45px solid #E57A10;
 }
+
+.headerBannerBlock
+{
+	background: #E57A10;
+}
+
+.headerBannerText
+{
+	color: #FFBE82;
+}
+
+.headerBannerAngle
+{
+	border-left: 45px solid #E57A10;
+}

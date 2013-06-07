@@ -37,18 +37,117 @@ body
 	min-width:45%;
 }
 
-#headerRight 
+#headerRightTop 
 {
 	position: absolute;
 	top: 0;
 	right: 0;
 	background: #96bf49;
-	color: #d9e78f;
-	font-size: 16pt;
-	padding: 5px;
-	height: 45px;
-	line-height: 45px;
+	font-size: 18pt;
+	padding: 2px;
+	height: 30px;
+	line-height: 30px;
+	width: 20%;
+	text-align: center;
+	z-index: 99;
+}
 
+#headerRightTop a
+{
+	color: #d9e78f;
+	text-decoration: none;
+}
+
+#headerRightTop a:visited
+{
+	color: #d9e78f;
+}
+
+#headerRightTop a:hover
+{
+	color: #000000;
+}
+
+#headerRightBottom
+{
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background: #96bf49;
+	font-size: 16pt;
+	padding: 2px;
+	height: 55px;
+	width: 20%;
+	z-index: 99;
+}
+
+#headerRightBottom input
+{
+	height: 20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#headerRightBottom input:hover
+{
+	border: 2px solid gray;
+}
+
+#headerRightBottom input:focus
+{
+	border: 2px solid black;
+}
+
+.headerButton
+{
+	display: block;
+	height: 33px;
+	background: #96bf49;
+	border: 2px solid #d9e78f;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	min-width: 65px;
+	margin: 3px auto;
+	text-align: center;
+}
+
+.headerButton:hover
+{
+	border: 2px solid black;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.headerButton:active
+{
+	border-color: black;
+}
+
+#headerRightbottom::-webkit-input-placeholder 
+{
+   color: #333333;
+   font-style: italic;
+}
+
+#headerRightbottom:-moz-input-placeholder 
+{ /* Firefox 18- */
+   color: #333333;  
+   font-style: italic;
+   font-size: 8pt;
+}
+
+#headerRightbottom::-moz-input-placeholder 
+{  /* Firefox 19+ */
+   color: #333333; 
+   font-style: italic;
+   font-size: 8pt; 
+}
+
+#headerRightbottom:-ms-input-placeholder 
+{  
+   color: #333333; 
+   font-style: italic; 
+   font-size: 8pt;
 }
 
 .headerBannerBlock

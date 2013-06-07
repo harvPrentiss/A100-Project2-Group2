@@ -1,9 +1,30 @@
 @import url(global.css);
 
-#headerRight 
+#headerRightTop 
 {
 	background: #E57A10;
 	color: #FFBE82;
+}
+
+#headerRightTop a
+{
+	color: #FFBE82;
+}
+
+#headerRightTop a:visited
+{
+	color: #FFBE82;
+}
+
+#headerRightBottom
+{
+	background: #E57A10;
+}
+
+.headerButton
+{
+	border: 2px solid #FFBE82;
+	background: #E57A10;
 }
 
 .dirText

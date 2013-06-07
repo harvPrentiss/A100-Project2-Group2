@@ -4,10 +4,31 @@
 	Light Blue: #49A9BC
 */
 
-#headerRight 
+#headerRightTop 
 {
 	background: #49A9BC;
 	color: #8EE5E2;
+}
+
+#headerRightTop a
+{
+	color: #8EE5E2;
+}
+
+#headerRightTop a:visited
+{
+	color: #8EE5E2;
+}
+
+#headerRightBottom
+{
+	background: #49A9BC;
+}
+
+.headerButton
+{
+	border: 2px solid #8EE5E2;
+	background: #49A9BC;
 }
 
 .dirText

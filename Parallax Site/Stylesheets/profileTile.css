@@ -97,9 +97,15 @@
 {
     color: #236B8E;
     text-decoration: none;
-    font-size: 12pt;
+    font-size: 14pt;
     text-align: center;
     display:block;
     font-style: normal;
     font-family: 'Fjalla One', sans-serif;
+}
+
+#backContainer
+{
+    width: 100%;
+    padding: 5px;
 }

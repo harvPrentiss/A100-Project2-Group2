@@ -18,13 +18,13 @@ $(document).ready(function () {
 	var mainContainer = document.getElementById("container")
 	$(mainContainer).swipe({
 		swipe:function(event, direction, distance, duration, fingerCount){
-			if(direction == 'right'){
+			if(direction == 'right' && typeof leftKey === 'function'){
 				leftKey();
-			} else if(direction == 'left'){
+			} else if(direction == 'left' && typeof rightKey === 'function'){
 				rightKey();
-			} else if(direction == 'down'){
+			} else if(direction == 'down' && typeof topKey === 'function'){
 				topKey();
-			} else if(direction == 'up'){
+			} else if(direction == 'up' && typeof bottomKey === 'function'){
 				bottomKey();
 			}
 		}, threshold: 250

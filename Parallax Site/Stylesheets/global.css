@@ -83,7 +83,7 @@ body
 
 #headerRightBottom input
 {
-	height: 20px;
+	height: 20px;	
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 }
@@ -101,14 +101,17 @@ body
 .headerButton
 {
 	display: block;
-	height: 33px;
+	height: 22px;
 	background: #96bf49;
 	border: 2px solid #d9e78f;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
-	min-width: 65px;
+	max-width: 80px;
+	font-size: 16pt;
 	margin: 3px auto;
 	text-align: center;
+	color: #d9e78f;
+	text-decoration: none;
 }
 
 .headerButton:hover
@@ -327,7 +330,8 @@ body
 	width: 45%;
 	margin: 0px 10px;
 	border: 1px solid black;
-	background: rgba(255, 255, 255, 0.6);
+	background: #111111;
+	color: #CCCCCC;
 }
 
 #newMembers
@@ -336,7 +340,8 @@ body
 	width: 45%;
 	margin: 0px 10px;
 	border: 1px solid black;
-	background: rgba(255, 255, 255, 0.6);
+	background: #111111;
+	color: #CCCCCC;
 }
 
 #twitterBox
@@ -361,17 +366,20 @@ body
 {
 	font-size: 16pt;
 	float: left;
-	min-width: 190px;
-	max-width: 190px;
+	min-width: 150px;
+	width: 20%;
 	margin-right: 5px;
+	margin-left: 10px;
 }
 
 #navBox
 {
-	background: rgba(10, 10, 10, 0.6);
-	min-width: 190px;
-	max-width: 190px;
+	background: #111111;
+	min-width: 140px;
+	width: 92%;
 	padding: 5px;
+	text-align: center;
+        margin-left: 5px;
 }
 
 .navList 
@@ -396,20 +404,28 @@ body
 	color: #d9e78f;
 }
 
+.navHeadings
+{
+	font-size: 16pt;
+	text-align: center;
+	color: #CCCCCC;
+}
+
 #searchContainer
 {
 	float: left;
-	width: 60%;
-	margin:0px 20px;
-	padding: 10px;
+	width: 55%;
+	margin:0px 5px;
+	padding: 0px 10px;
 }
 
 #styleSelectionBox
 {
-	min-width:190px;
-	max-width: 190px;
+	min-width: 140px;
+	width: 92%;
 	padding: 5px;
-	background: rgba(10, 10, 10, 0.6);
+	background: #111111;
+        margin-left: 5px;
 }
 
 #styleSelectionBox a
@@ -417,15 +433,33 @@ body
 	text-decoration: none;
 }
 
+#adBox
+{
+	float: left;
+	width: 18%;
+	background: #111111;
+	color: #CCCCCC;
+	font-size: 16pt;
+	padding: 5px;
+	text-align: center;
+}
+
+#adBox img 
+{
+	width: 100%;
+	height: 100%;
+}
+
 #map
 {
 	width: 100%;
+	height: 100%;
 }
 
 #mapBox 
 {
 	float: left;
-	width: 72%;
+	width: 100%;
 	height: 100%;
 }
 
@@ -437,8 +471,11 @@ body
 	bottom: 5px;
 	right: 5px;
 	border: 2px solid #236B8E;
-	max-height: 545px;
-	min-height: 545px;
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+	height: 80%;
+	z-index: 99;
 }
 
 #filtersBox
@@ -452,14 +489,16 @@ body
 {
 	width: 100%;
 	float: left;
-	background: rgba(255, 255, 255, 0.6);
+	background: #111111;
+        color: #CCCCCC;
 }
 
 #profileEditBox
 {
 	width: 100%;
 	float: left;
-	background: rgba(255, 255, 255, 0.6);
+	background: #111111;
+        color: #CCCCCC;
 }
 
 ::-webkit-input-placeholder 
@@ -553,11 +592,17 @@ body
 	background: #F9993E;
 }
 
-.navHeadings
-{
-	font-size: 16pt;
-	text-align: center;
-	color: #CCCCCC;
+.pink
+{ 
+	background: #f3e2db;
 }
 
+.lavender
+{
+	background: #623b62;
+}
 
+.gold
+{
+	background: #ffcc00;
+}

@@ -12,6 +12,9 @@
             <link rel ="stylesheet" href="Stylesheets/global.css">
             <link rel="alternate stylesheet" title="blue" href="Stylesheets/blue.css">
             <link rel="alternate stylesheet" title="orange" href="Stylesheets/orange.css">
+            <link rel="alternate stylesheet" title="pink" href="Stylesheets/pink.css">
+            <link rel="alternate stylesheet" title="lavender" href="Stylesheets/lavender.css">
+            <link rel="alternate stylesheet" title="gold" href="Stylesheets/gold.css">
             <!-- Scripts -->
             <script type="text/javascript" src="Javascript/jq.js"></script>
             <script type="text/javascript" src="Javascript/jquery.touchSwipe.min.js"></script>
@@ -21,7 +24,6 @@
     		<script type="text/javascript" src="Javascript/googleMap.js"></script>
     		<script type="text/javascript" src="https://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0"></script>
     		<script type="text/javascript" src="Javascript/styleswitch.js"></script>
-    		<script type="text/javascript" src="Javascript/textResize.js"></script>
     		<script type="text/javascript">
  				$(document).ready(function(){
 				 
@@ -52,7 +54,7 @@
         		<input type="text" name="username" placeholder="Email..." style="left:5px;"/>
         		<input type="password" name="password" placeholder="Password..." style="right:5px;"/>
         		<br>
-        		<input type="button" name="login" value="Do It" class="headerButton"/>
+        		<a href="#" class="headerButton">Do It</a>
         	</div>
 
 
@@ -100,7 +102,10 @@
 					            		Field: Conglomerate<br><br>
 					            		"We make things grow."<br><br>
 					            		<div class="profileLinks">
-					            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/>
+					            			<a href="http://www.linkedin.com" target="_blank">
+ <img src="Images/LinkedIn_Logo30px.png" />
+</a>
+					            			
 					            		</div>
 					            	</div>
 				        		</div>				       			
@@ -250,7 +255,11 @@
 					            		Field: Coding & Design<br><br>
 					            		"I'm awesome as well."<br><br>
 					            		<div class="profileLinks">
-					            			<a href="#"><img src="Images/LinkedIn_Logo30px.png"/></a>
+					            			<a href="http://www.linkedin.com/pub/melanie-rice/32/2ab/44" target="_blank">
+ <img src="Images/LinkedIn_Logo30px.png" />
+</a>
+					            			
+					            			
 					            		</div>
 					            	</div>
 				        		</div>
@@ -516,9 +525,6 @@
         				<div id="mapBox">
         					<div id="googleMap"></div>
         				</div>
-        				<div id="filtersBox">
-        					Filters
-        				</div>
         			</div>
         		</div>
 
@@ -591,14 +597,26 @@
 	        				<div id="styleSelectionBox">
 	        					<h1 class="navHeadings">Color Theme</h1>
 	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
-	        						<div id="styleLine" class="green">Green</div>
+	        						<div id="styleLine" class="green">Asparagus</div>
 	        					</a>
 	        					<a href="javascript:chooseStyle('blue', 999)">
-	        						<div id="styleLine" class="blue">Blue</div>
+	        						
+	        						<div id="styleLine" class="blue">Robin's Egg</div>
 	        					</a>
 	        					<a href="javascript:chooseStyle('orange', 999)">
-	        						<div id="styleLine" class="orange">Orange</div>
+	        						<div id="styleLine" class="orange">Harvest</div>
 								</a>
+								
+							<a href="javascript:chooseStyle('pink', 999)" checked="checked">
+	        						<div id="styleLine" class="pink">Blush</div>
+	        					</a>
+	        					
+	        					<a href="javascript:chooseStyle('lavender', 999)" checked="checked">
+	        						<div id="styleLine" class="lavender">Amethyst</div>
+	        					</a>	
+							<a href="javascript:chooseStyle('gold', 999)">
+	        						<div id="styleLine" class="gold">Bee</div>
+							</a>	
         					</div>
         				</div>
         				<div id="searchContainer">
@@ -616,6 +634,10 @@
 							</script>
 							<gcse:search></gcse:search>
 	        			</div>
+                                        <div id="adBox">
+	        				Ads
+	        				<img src="Images/pepsi.jpg"/>
+	        			</div>
         			</div>
         		</div>
 
@@ -623,6 +645,7 @@
         			<div id="navContentContainer">
         				<div id="navLinksBar">
         					<div id="navBox">
+        						<h1 class="navHeadings">Links</h1>
 	        					<ui class="navList">
 	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
 	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
@@ -631,6 +654,31 @@
 	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
 	        					</ul>
 	        				</div>
+	        				<br>
+	        				<div id="styleSelectionBox">
+	        					<h1 class="navHeadings">Color Theme</h1>
+	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
+	        						<div id="styleLine" class="green">Asparagus</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('blue', 999)">
+	        						
+	        						<div id="styleLine" class="blue">Robin's Egg</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('orange', 999)">
+	        						<div id="styleLine" class="orange">Harvest</div>
+								</a>
+								
+							<a href="javascript:chooseStyle('pink', 999)" checked="checked">
+	        						<div id="styleLine" class="pink">Blush</div>
+	        					</a>
+	        					
+	        					<a href="javascript:chooseStyle('lavender', 999)" checked="checked">
+	        						<div id="styleLine" class="lavender">Amethyst</div>
+	        					</a>	
+							<a href="javascript:chooseStyle('gold', 999)">
+	        						<div id="styleLine" class="gold">Bee</div>
+							</a>	
+        					</div>
         				</div>
         				<div id="searchContainer">
 	        				<script>
@@ -646,6 +694,10 @@
 							  })();
 							</script>
 							<gcse:search></gcse:search>
+	        			</div>
+                                        <div id="adBox">
+	        				Ads
+	        				<img src="Images/pepsi.jpg"/>
 	        			</div>
         			</div>
         		</div>
@@ -654,6 +706,7 @@
         			<div id="navContentContainer">
         				<div id="navLinksBar">
         					<div id="navBox">
+        						<h1 class="navHeadings">Links</h1>
 	        					<ui class="navList">
 	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
 	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
@@ -662,6 +715,31 @@
 	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
 	        					</ul>
 	        				</div>
+	        				<br>
+	        				<div id="styleSelectionBox">
+	        					<h1 class="navHeadings">Color Theme</h1>
+	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
+	        						<div id="styleLine" class="green">Asparagus</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('blue', 999)">
+	        						
+	        						<div id="styleLine" class="blue">Robin's Egg</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('orange', 999)">
+	        						<div id="styleLine" class="orange">Harvest</div>
+								</a>
+								
+							<a href="javascript:chooseStyle('pink', 999)" checked="checked">
+	        						<div id="styleLine" class="pink">Blush</div>
+	        					</a>
+	        					
+	        					<a href="javascript:chooseStyle('lavender', 999)" checked="checked">
+	        						<div id="styleLine" class="lavender">Amethyst</div>
+	        					</a>	
+							<a href="javascript:chooseStyle('gold', 999)">
+	        						<div id="styleLine" class="gold">Bee</div>
+							</a>	
+        					</div>
         				</div>
         				<div id="searchContainer">
 	        				<script>
@@ -677,6 +755,10 @@
 							  })();
 							</script>
 							<gcse:search></gcse:search>
+	        			</div>
+                                        <div id="adBox">
+	        				Ads
+	        				<img src="Images/pepsi.jpg"/>
 	        			</div>
         			</div>
         		</div>
@@ -685,6 +767,7 @@
         			<div id="navContentContainer">
         				<div id="navLinksBar">
         					<div id="navBox">
+        						<h1 class="navHeadings">Links</h1>
 	        					<ui class="navList">
 	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
 	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
@@ -693,6 +776,31 @@
 	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
 	        					</ul>
 	        				</div>
+	        				<br>
+	        				<div id="styleSelectionBox">
+	        					<h1 class="navHeadings">Color Theme</h1>
+	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
+	        						<div id="styleLine" class="green">Asparagus</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('blue', 999)">
+	        						
+	        						<div id="styleLine" class="blue">Robin's Egg</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('orange', 999)">
+	        						<div id="styleLine" class="orange">Harvest</div>
+								</a>
+								
+							<a href="javascript:chooseStyle('pink', 999)" checked="checked">
+	        						<div id="styleLine" class="pink">Blush</div>
+	        					</a>
+	        					
+	        					<a href="javascript:chooseStyle('lavender', 999)" checked="checked">
+	        						<div id="styleLine" class="lavender">Amethyst</div>
+	        					</a>	
+							<a href="javascript:chooseStyle('gold', 999)">
+	        						<div id="styleLine" class="gold">Bee</div>
+							</a>	
+        					</div>
         				</div>
         				<div id="searchContainer">
 	        				<script>
@@ -709,6 +817,10 @@
 							</script>
 							<gcse:search></gcse:search>
 	        			</div>
+                                        <div id="adBox">
+	        				Ads
+	        				<img src="Images/pepsi.jpg"/>
+	        			</div>
         			</div>
         		</div>
 
@@ -716,6 +828,7 @@
         			<div id="navContentContainer">
         				<div id="navLinksBar">
         					<div id="navBox">
+        						<h1 class="navHeadings">Links</h1>
 	        					<ui class="navList">
 	        						<li class="navListItem"><a name="home" id="navLinkBtn" onclick="parallaxRedirection(this);">Home</a></li>
 	        						<li class="navListItem"><a name="map" id="navLinkBtn" onclick="parallaxRedirection(this);">Map</a></li>
@@ -724,6 +837,31 @@
 	        						<li class="navListItem"><a name="profileEdit" id="navLinkBtn" onclick="parallaxRedirection(this);">Profile Edit</a></li>
 	        					</ul>
 	        				</div>
+	        				<br>
+	        				<div id="styleSelectionBox">
+	        					<h1 class="navHeadings">Color Theme</h1>
+	        					<a href="javascript:chooseStyle('green', 999)" checked="checked">
+	        						<div id="styleLine" class="green">Asparagus</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('blue', 999)">
+	        						
+	        						<div id="styleLine" class="blue">Robin's Egg</div>
+	        					</a>
+	        					<a href="javascript:chooseStyle('orange', 999)">
+	        						<div id="styleLine" class="orange">Harvest</div>
+								</a>
+								
+							<a href="javascript:chooseStyle('pink', 999)" checked="checked">
+	        						<div id="styleLine" class="pink">Blush</div>
+	        					</a>
+	        					
+	        					<a href="javascript:chooseStyle('lavender', 999)" checked="checked">
+	        						<div id="styleLine" class="lavender">Amethyst</div>
+	        					</a>	
+							<a href="javascript:chooseStyle('gold', 999)">
+	        						<div id="styleLine" class="gold">Bee</div>
+							</a>	
+        					</div>
         				</div>
         				<div id="searchContainer">
 	        				<script>
@@ -739,6 +877,10 @@
 							  })();
 							</script>
 							<gcse:search></gcse:search>
+	        			</div>
+                                        <div id="adBox">
+	        				Ads
+	        				<img src="Images/pepsi.jpg"/>
 	        			</div>
         			</div>
         		</div>
@@ -765,7 +907,7 @@
 				<div id="topText" class="dirText" > Test</div>
 			</div>
 
-			<div id="bottomControl" class="control center topBot" style="left:45%;bottom:10px;">
+			<div id="bottomControl" class="control center topBot" style="left:55%;bottom:10px;">
 				<div id="bottomText" class="dirText"> Test</div>
 				<div id="bottomArrow" class="arrow-down arrow"></div>
 

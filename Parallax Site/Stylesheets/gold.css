@@ -1,0 +1,88 @@
+@import url(global.css);
+
+/*  Dark Blue: #ffcc00 
+	Light Blue: #49A9BC
+*/
+
+#headerRightTop 
+{
+	background: #000000;
+	color: #ffcc00;
+}
+
+#headerRightTop a
+{
+	color: #ffcc00;
+}
+
+#headerRightTop a:visited
+{
+	color: #ffcc00;
+}
+
+#headerRightBottom
+{
+	background: #000000;
+}
+
+.headerButton
+{
+	border: 2px solid #ffcc00;
+	background: #000000;
+	color: #ffcc00;
+}
+
+.headerButton:hover
+{
+	border: 2px solid #ffe88c;
+}
+
+.dirText
+{
+	color: #ffcc00;
+}
+
+#navLinkBtn
+{
+	color: #ffcc00;
+}
+
+#navLinkBtn:hover
+{	
+	color: #ffe88c;
+}
+
+.arrow-right
+{
+	border-left: 45px solid #ffcc00;
+}
+
+.arrow-left
+{
+	border-right: 45px solid #ffcc00;
+}
+
+.arrow-down
+{
+	border-top: 45px solid #ffcc00;
+}
+
+.arrow-up
+{
+	border-bottom: 45px solid #ffcc00;
+}
+
+.headerBannerBlock
+{
+	background: #000000;
+}
+
+.headerBannerText
+{
+	color: #ffcc00;
+}
+
+.headerBannerAngle
+{
+	border-left: 45px solid #000000;
+}

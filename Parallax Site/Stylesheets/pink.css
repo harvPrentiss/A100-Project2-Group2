@@ -1,0 +1,83 @@
+@import url(global.css);
+
+/*  Blush: #df9eb2 
+	Light Blush: #f3e2db
+*/
+
+#headerRightTop 
+{
+	background: #df9eb2 ;
+	color: #f3e2db ;
+}
+
+#headerRightTop a
+{
+	color: #f3e2db ;
+}
+
+#headerRightTop a:visited
+{
+	color: #f3e2db ;
+}
+
+#headerRightBottom
+{
+	background: #df9eb2 ;
+}
+
+.headerButton
+{
+	border: 2px solid #f3e2db ;
+	background: #df9eb2 ;
+	color: #f3e2db;
+}
+
+.dirText
+{
+	color: #f3e2db;
+}
+
+#navLinkBtn
+{
+	color: #f3e2db;
+}
+
+#navLinkBtn:hover
+{	
+	color: #f3e2db;
+}
+
+.arrow-right
+{
+	border-left: 45px solid #df9eb2;
+}
+
+.arrow-left
+{
+	border-right: 45px solid #df9eb2;
+}
+
+.arrow-down
+{
+	border-top: 45px solid #df9eb2;
+}
+
+.arrow-up
+{
+	border-bottom: 45px solid #df9eb2;
+}
+
+.headerBannerBlock
+{
+	background: #df9eb2;
+}
+
+.headerBannerText
+{
+	color: #f3e2db;
+}
+
+.headerBannerAngle
+{
+	border-left: 45px solid #df9eb2;
+}

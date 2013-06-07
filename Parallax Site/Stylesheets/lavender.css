@@ -1,0 +1,83 @@
+@import url(global.css);
+
+/*  Lavender: #d8b1d8 
+	Dark Lavender: #623b62
+*/
+
+#headerRightTop 
+{
+	background: #623b62;
+	color: #d8b1d8;
+}
+
+#headerRightTop a
+{
+	color: #d8b1d8;
+}
+
+#headerRightTop a:visited
+{
+	color: #d8b1d8;
+}
+
+#headerRightBottom
+{
+	background: #623b62;
+}
+
+.headerButton
+{
+	border: 2px solid #d8b1d8;
+	background: #623b62;
+	color: #d8b1d8;
+}
+
+.dirText
+{
+	color: #d8b1d8;
+}
+
+#navLinkBtn
+{
+	color: #623b62;
+}
+
+#navLinkBtn:hover
+{	
+	color: #d8b1d8;
+}
+
+.arrow-right
+{
+	border-left: 45px solid #d8b1d8;
+}
+
+.arrow-left
+{
+	border-right: 45px solid #d8b1d8;
+}
+
+.arrow-down
+{
+	border-top: 45px solid #d8b1d8;
+}
+
+.arrow-up
+{
+	border-bottom: 45px solid #d8b1d8;
+}
+
+.headerBannerBlock
+{
+	background: #623b62;
+}
+
+.headerBannerText
+{
+	color: #d8b1d8;
+}
+
+.headerBannerAngle
+{
+	border-left: 45px solid #623b62;
+}
